@@ -1,0 +1,10 @@
+package io;
+
+public class TesteGravacaoObjeto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

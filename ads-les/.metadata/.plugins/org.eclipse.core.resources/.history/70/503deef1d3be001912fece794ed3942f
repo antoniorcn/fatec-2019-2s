@@ -1,0 +1,22 @@
+package io;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class LeituraImagem {
+
+	public static void main(String[] args) {
+		File f = new File("C:/Users/anton/Pictures/IMG-20190503-WA0007.jpg");
+		try { 
+			FileInputStream imgIS = new FileInputStream(f);
+			int i = 0;
+			while((i = imgIS.read()) != -1) { 
+				System.out.print(" " + i);
+			}
+		} catch(Exception e) { 
+			e.printStackTrace();
+		}
+
+	}
+
+}
