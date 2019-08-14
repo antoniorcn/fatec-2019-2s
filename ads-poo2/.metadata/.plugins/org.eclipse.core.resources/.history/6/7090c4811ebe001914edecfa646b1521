@@ -1,0 +1,17 @@
+package aula2;
+
+public class EstourarHeap {
+	public static void main(String[] args) {
+		Aluno primeiro = new Aluno();
+		
+		Aluno proximo = primeiro;
+		
+		for(int i = 0; i < 1000; i++) { 
+			Aluno temp = new Aluno();
+			proximo.outro = temp;
+			proximo = temp;
+		}
+				
+		
+	}
+}

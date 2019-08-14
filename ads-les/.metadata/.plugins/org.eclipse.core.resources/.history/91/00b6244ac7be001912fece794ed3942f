@@ -1,0 +1,20 @@
+package io;
+
+import java.io.FileWriter;
+
+public class TesteArquivoGravacao {
+
+	public static void main(String[] args) {
+		System.out.println("Inicio do teste de gravação de arquivo");
+		try { 
+			FileWriter fw = new FileWriter("C:/tmp2/MeuArquivo.txt", true);
+			fw.write("Ola mundo...\n");
+			fw.flush();
+			fw.write("Linha2\n");
+			fw.close();
+		} catch(Exception e) { 
+			e.printStackTrace();
+		}
+		System.out.println("Fim do programa");
+	}
+}
