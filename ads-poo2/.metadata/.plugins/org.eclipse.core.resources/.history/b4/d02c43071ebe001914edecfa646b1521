@@ -1,8 +1,0 @@
-package aula2;
-
-public class EstourarHeap {
-
-	public static void main(String[] args) {
-	}
-
-}
