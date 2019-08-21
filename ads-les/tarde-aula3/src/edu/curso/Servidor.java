@@ -1,16 +1,18 @@
 package edu.curso;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Scanner;
 public class Servidor {
 	public static void main(String[] args) {
-		try {
+		try (
+			ServerSocket srv = new ServerSocket(15678)
+			) {
 			System.out.println("Servidor Iniciado");
-			ServerSocket srv = 
-					new ServerSocket(15678);
+			 
 			System.out.println(
 					"Porta reservada, " +
 					"aguardando comunicação do cliente");
@@ -21,11 +23,14 @@ public class Servidor {
 				"Bem vindo ao servidor\r\n".getBytes();
 			out.write( bytes );
 			out.flush();
-			int i = 0;
-			while(i != 27) { 
-				if (System.in.available() > 0) { 
-					i = System.in.read();
-					out.write( i );
+			System.out.println("Cliente conectado");
+			InputStreamReader reader = new InputStreamReader(System.in);
+			BufferedReader bfr = new BufferedReader(reader);
+			String linha = "";
+			while(!linha.contains("SAIR")) { 
+				if (bfr.ready()) { 
+					linha = bfr.readLine() + "\r\n";
+					out.write( linha.getBytes() );
 					out.flush();
 				}
 				if (in.available() > 0) {
@@ -33,8 +38,6 @@ public class Servidor {
 					System.out.print(c);
 				}
 			}
-			
-			System.out.println("Cliente conectado");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
