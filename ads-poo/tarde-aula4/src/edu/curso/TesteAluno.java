@@ -1,7 +1,6 @@
 package edu.curso;
 
 public class TesteAluno {
-	
 	public static void main(String[] args) {
 		Aluno a1 = new Aluno("João Alberto", "1234");
 		Aluno a2 = new Aluno("João Silva", "1234");
