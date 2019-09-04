@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula4/conselheiro_21.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula4/ordenacao2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula4/ordenacao3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula4/temperatura.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula5/dados_piratas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula5/explorar_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula5/pedra_papel_tesoura.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noite-aula2/aleatorio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djd-idw-manha/aula2/pagina.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djd-idw-manha/aula3/cadastro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djd-idw-manha/aula3/caminhoneiros.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djd-idw-manha/aula3/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -17,21 +20,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manha-aula4/ordenacao2.py">
+        <entry file="file://$PROJECT_DIR$/manha-aula5/pedra_papel_tesoura.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="8" lean-forward="true" selection-end-line="8" />
+            <state relative-caret-position="903">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manha-aula4/ordenacao3.py">
+        <entry file="file://$PROJECT_DIR$/manha-aula5/dados_piratas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="26">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manha-aula5/explorar_string.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -60,14 +72,18 @@
         <option value="$PROJECT_DIR$/manha-aula4/conselheiro_21.py" />
         <option value="$PROJECT_DIR$/manha-aula4/ordenacao2.py" />
         <option value="$PROJECT_DIR$/manha-aula4/ordenacao3.py" />
+        <option value="$PROJECT_DIR$/noite-aula2/aleatorio.py" />
+        <option value="$PROJECT_DIR$/manha-aula5/explorar_string.py" />
+        <option value="$PROJECT_DIR$/manha-aula5/pedra_papel_tesoura.py" />
+        <option value="$PROJECT_DIR$/manha-aula5/dados_piratas.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="1087" />
+    <option name="y" value="49" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -87,7 +103,7 @@
             <path>
               <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
               <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="manha-aula4" type="462c0819:PsiDirectoryNode" />
+              <item name="manha-aula5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -126,8 +142,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ordenacao3">
-    <configuration name="conselheiro_21" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.dados_piratas">
+    <configuration name="aleatorio" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,12 +151,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula4/conselheiro_21.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula2/aleatorio.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ordenacao2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dados_piratas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,12 +173,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula5" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula4/ordenacao2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula5/dados_piratas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="explorar_string" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="djd-prog2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula5/explorar_string.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,7 +231,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="temperatura" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pedra_papel_tesoura" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,34 +239,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula5" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula4/temperatura.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="teste_find" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="djd-prog2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha/aula2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha/aula2/teste_find.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula5/pedra_papel_tesoura.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dados_piratas" />
+        <item itemvalue="Python.pedra_papel_tesoura" />
+        <item itemvalue="Python.explorar_string" />
+        <item itemvalue="Python.aleatorio" />
         <item itemvalue="Python.ordenacao3" />
-        <item itemvalue="Python.ordenacao2" />
-        <item itemvalue="Python.conselheiro_21" />
-        <item itemvalue="Python.temperatura" />
-        <item itemvalue="Python.teste_find" />
       </list>
     </recent_temporary>
   </component>
@@ -260,14 +276,16 @@
       <workItem from="1565618226402" duration="3950000" />
       <workItem from="1565729109517" duration="17000" />
       <workItem from="1566828062675" duration="3678000" />
+      <workItem from="1567263839898" duration="3056000" />
+      <workItem from="1567428623225" duration="4803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7645000" />
+    <option name="totallyTimeSpent" value="15504000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24962178" />
@@ -275,7 +293,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33551556" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46644846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,7 +317,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33551556" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27659574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,14 +340,18 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/djd_prog2$ordenacao2.coverage" NAME="ordenacao2 Coverage Results" MODIFIED="1566832381170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_find.coverage" NAME="teste_find Coverage Results" MODIFIED="1565623270312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
-    <SUITE FILE_PATH="coverage/djd_prog2$ordenacao3.coverage" NAME="ordenacao3 Coverage Results" MODIFIED="1566833755143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
+    <SUITE FILE_PATH="coverage/djd_prog2$ordenacao3.coverage" NAME="ordenacao3 Coverage Results" MODIFIED="1567263933299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_float.coverage" NAME="variaveis_float Coverage Results" MODIFIED="1565622225467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1565621138526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$temperatura.coverage" NAME="temperatura Coverage Results" MODIFIED="1566832046113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_str.coverage" NAME="variaveis_str Coverage Results" MODIFIED="1565622539205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis.coverage" NAME="variaveis Coverage Results" MODIFIED="1565621957583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
+    <SUITE FILE_PATH="coverage/djd_prog2$ordenacao2.coverage" NAME="ordenacao2 Coverage Results" MODIFIED="1566832381170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pedra_papel_tesoura.coverage" NAME="pedra_papel_tesoura Coverage Results" MODIFIED="1567432847034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
+    <SUITE FILE_PATH="coverage/djd_prog2$explorar_string.coverage" NAME="explorar_string Coverage Results" MODIFIED="1567432448371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
+    <SUITE FILE_PATH="coverage/djd_prog2$aleatorio.coverage" NAME="aleatorio Coverage Results" MODIFIED="1567265682545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula2" />
+    <SUITE FILE_PATH="coverage/djd_prog2$dados_piratas.coverage" NAME="dados_piratas Coverage Results" MODIFIED="1567437021371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$conselheiro_21.coverage" NAME="conselheiro_21 Coverage Results" MODIFIED="1566832100180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
   </component>
   <component name="editorHistoryManager">
@@ -378,17 +400,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha-aula4/ordenacao2.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula4/ordenacao3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="8" lean-forward="true" selection-end-line="8" />
+        <state relative-caret-position="225">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha-aula4/ordenacao3.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula4/ordenacao2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="200">
+          <caret line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noite-aula2/aleatorio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula5/explorar_string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula5/pedra_papel_tesoura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula5/dados_piratas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
