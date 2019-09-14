@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Cadastro de Armas</h1>
+    <form action="./processa_armas.html">
+      <table class="table">
+        <tr>
+          <td>Tipo da Arma</td>
+          <td><input type="text" name="TIPO"/></td>
+        </tr>
+        <tr>
+          <td>Ano de Fabricacao</td>
+          <td><input type="number" name="ANO" value="2019" min="1800" max="2019"/></td>
+        </tr>
+        <tr>
+          <td>Calibre</td>
+          <td><input type="number" name="CALIBRE" step="0.1" min="0.2" max="0.8"/></td>
+        </tr>
+        <tr>
+          <td>Skin</td>
+          <td><input type="color" name="COR"/></td>
+        </tr>
+        <tr>
+          <td>Situação</td>
+          <td>
+            <input type="radio" name="SITUACAO" value="novo" checked>Novo</input>
+            <input type="radio" name="SITUACAO" value="usado">Usado</input>
+          </td>
+        </tr>
+        <tr>
+          <td>Acessórios</td>
+          <td>
+            <input type="checkbox" name="ACESSORIOS" value="scope">Scope</input>
+            <input type="checkbox" name="ACESSORIOS" value="empunhadura">Empunhadura</input>
+            <input type="checkbox" name="ACESSORIOS" value="supressor">Supressor</input>
+            <input type="checkbox" name="ACESSORIOS" value="silenciador">Silenciador</input>
+            <input type="checkbox" name="ACESSORIOS" value="coronhadobravel">Coronha Dobravel</input>
+          </td>
+        </tr>
+        <tr>
+          <td>Origem</td>
+          <td>
+            <select name="PAIS">
+              <option value="australia">Australia</option>
+              <option value="brasil">Brasil</option>
+              <option value="russia">Russia</option>
+              <option value="eua">EUA</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Enviar" class="btn btn-primary"/></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

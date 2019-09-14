@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <h1>Cadastro de Armas</h1>
+    <form action="./processa_armas.html">
+      <p>Tipo da Arma</p>
+      <input type="text" name="TIPO"/>
+      <p>Ano de Fabricacao</p>
+      <input type="number" name="ANO" value="2019" min="1800" max="2019"/>
+      <p>Calibre</p>
+      <input type="number" name="CALIBRE" step="0.1" min="0.2" max="0.8"/>
+      <p>Skin</p>
+      <input type="color" name="COR"/>
+      <p>Situação</p>
+      <input type="radio" name="SITUACAO" value="novo" checked>Novo</input>
+      <input type="radio" name="SITUACAO" value="usado">Usado</input>
+      <p>Acessórios</p>
+      <input type="checkbox" name="ACESSORIOS" value="scope">Scope</input>
+      <input type="checkbox" name="ACESSORIOS" value="empunhadura">Empunhadura</input>
+      <input type="checkbox" name="ACESSORIOS" value="supressor">Supressor</input>
+      <input type="checkbox" name="ACESSORIOS" value="silenciador">Silenciador</input>
+      <input type="checkbox" name="ACESSORIOS" value="coronhadobravel">Coronha Dobravel</input>
+      <p>Origem</p>
+      <select name="PAIS">
+        <option value="australia">Australia</option>
+        <option value="brasil">Brasil</option>
+        <option value="russia">Russia</option>
+        <option value="eua">EUA</option>
+      </select>
+      <input type="submit" value="Enviar"/>
+    </form>
+  </body>
+</html>
