@@ -6,5 +6,11 @@ numero = round(random() * 5) + 1
 print("Numero escolhido pelo usuario: " + str(n))
 print("Numero sorteado no dado: " + str(numero))
 ganhou = n == numero
-print("Ganhou: " + str(ganhou))
+
+if ganhou:
+    print("Você Ganhou .... Parabéns !!!")
+else:
+    print("Falhou miseravelmente")
+
+print("Fim do jogo")
 
