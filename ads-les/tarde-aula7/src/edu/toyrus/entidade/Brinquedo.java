@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Brinquedo {
 	private long id;
-	private String categoria;
-	private String nome;
+	private String categoria = "";
+	private String nome = "";
 	private int idadeMinima;
-	private String fabricante;
+	private String fabricante = "";
 	private int lote;
-	private Date dataCompra;
+	private Date dataCompra = new Date();
 	
 	public long getId() {
 		return id;

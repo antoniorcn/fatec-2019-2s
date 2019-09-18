@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBUtil {
-	private static String JDBC_URl = "jdbs:mariadb://localhost:3306/brinquedos";
+	private static String JDBC_URl = "jdbc:mariadb://localhost:3306/brinquedos";
 	private static String JDBC_USER = "root";
 	private static String JDBC_PASS = "";
 	private static DBUtil instancia = null;
