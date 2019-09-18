@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/noite-aula3/letras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula3/numeros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula3/numeros_for.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula3/ordenar2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula3/tabuada.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula3/temperatura.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula3/temperaturas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula6/jogo_dados_parte2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula6/numeros.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula6/tabuada.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula6/teste_lista.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula2/aleatorio.py" beforeDir="false" afterPath="$PROJECT_DIR$/noite-aula2/aleatorio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha/aula2/helloworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula2/helloworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha/aula2/teste_find.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula2/teste_find.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha/aula2/variaveis.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula2/variaveis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha/aula2/variaveis_float.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula2/variaveis_float.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha/aula2/variaveis_str.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula2/variaveis_str.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/noite-aula3/numeros_for.py">
+        <entry file="file://$PROJECT_DIR$/manha-aula6/jogo_dados_parte2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="375">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -65,14 +65,18 @@
         <option value="$PROJECT_DIR$/noite-aula3/tabuada.py" />
         <option value="$PROJECT_DIR$/noite-aula3/letras.py" />
         <option value="$PROJECT_DIR$/noite-aula3/numeros_for.py" />
+        <option value="$PROJECT_DIR$/manha-aula6/numeros.py" />
+        <option value="$PROJECT_DIR$/manha-aula6/tabuada.py" />
+        <option value="$PROJECT_DIR$/manha-aula6/teste_lista.py" />
+        <option value="$PROJECT_DIR$/manha-aula6/jogo_dados_parte2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1224" />
+    <option name="y" value="28" />
     <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -81,35 +85,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="manha-aula5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="noite-aula2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="noite-aula3" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -126,6 +102,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha-aula2" />
       <recent name="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha" />
     </key>
   </component>
@@ -141,8 +118,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.numeros_for">
-    <configuration name="letras" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.jogo_dados_parte2">
+    <configuration name="jogo_dados_parte2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,12 +127,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula3/letras.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula6/jogo_dados_parte2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="numeros" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="numeros (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,12 +149,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula3/numeros.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula6/numeros.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ordenar2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tabuada (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -216,12 +193,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula3/ordenar2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula6/tabuada.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,7 +207,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tabuada" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="teste_lista" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -238,12 +215,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula3/tabuada.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula6/teste_lista.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jogo_dados_parte2" />
+        <item itemvalue="Python.teste_lista" />
+        <item itemvalue="Python.tabuada (1)" />
+        <item itemvalue="Python.numeros (1)" />
         <item itemvalue="Python.numeros_for" />
-        <item itemvalue="Python.letras" />
-        <item itemvalue="Python.tabuada" />
-        <item itemvalue="Python.numeros" />
-        <item itemvalue="Python.ordenar2" />
       </list>
     </recent_temporary>
   </component>
@@ -278,14 +255,16 @@
       <workItem from="1567263839898" duration="3056000" />
       <workItem from="1567428623225" duration="4803000" />
       <workItem from="1568466839636" duration="7061000" />
+      <workItem from="1568642691555" duration="4086000" />
+      <workItem from="1568818943389" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22565000" />
+    <option name="totallyTimeSpent" value="26665000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24962178" />
@@ -293,7 +272,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24713585" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15384616" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -317,7 +296,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3420622" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20621932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,11 +321,14 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djd_prog2$numeros.coverage" NAME="numeros Coverage Results" MODIFIED="1568473988490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_find.coverage" NAME="teste_find Coverage Results" MODIFIED="1565623270312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
+    <SUITE FILE_PATH="coverage/djd_prog2$jogo_dados_parte2.coverage" NAME="jogo_dados_parte2 Coverage Results" MODIFIED="1568647297852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
     <SUITE FILE_PATH="coverage/djd_prog2$ordenacao3.coverage" NAME="ordenacao3 Coverage Results" MODIFIED="1567263933299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
+    <SUITE FILE_PATH="coverage/djd_prog2$numeros__1_.coverage" NAME="numeros (1) Coverage Results" MODIFIED="1568643206417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
     <SUITE FILE_PATH="coverage/djd_prog2$ordenar2.coverage" NAME="ordenar2 Coverage Results" MODIFIED="1568471985105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_float.coverage" NAME="variaveis_float Coverage Results" MODIFIED="1565622225467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1565621138526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$temperatura.coverage" NAME="temperatura Coverage Results" MODIFIED="1568471713520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
+    <SUITE FILE_PATH="coverage/djd_prog2$tabuada__1_.coverage" NAME="tabuada (1) Coverage Results" MODIFIED="1568643677618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_str.coverage" NAME="variaveis_str Coverage Results" MODIFIED="1565622539205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis.coverage" NAME="variaveis Coverage Results" MODIFIED="1565621957583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$tabuada.coverage" NAME="tabuada Coverage Results" MODIFIED="1568475051527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
@@ -357,35 +339,36 @@
     <SUITE FILE_PATH="coverage/djd_prog2$numeros_for.coverage" NAME="numeros_for Coverage Results" MODIFIED="1568475485581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$explorar_string.coverage" NAME="explorar_string Coverage Results" MODIFIED="1567432448371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$aleatorio.coverage" NAME="aleatorio Coverage Results" MODIFIED="1567265682545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula2" />
+    <SUITE FILE_PATH="coverage/djd_prog2$teste_lista.coverage" NAME="teste_lista Coverage Results" MODIFIED="1568643911831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
     <SUITE FILE_PATH="coverage/djd_prog2$dados_piratas.coverage" NAME="dados_piratas Coverage Results" MODIFIED="1567437021371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$conselheiro_21.coverage" NAME="conselheiro_21 Coverage Results" MODIFIED="1566832100180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manha/aula2/helloworld.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula2/helloworld.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha/aula2/variaveis.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula2/variaveis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha/aula2/variaveis_float.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula2/variaveis_float.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha/aula2/variaveis_str.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula2/variaveis_str.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha/aula2/teste_find.py">
+    <entry file="file://$PROJECT_DIR$/manha-aula2/teste_find.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
@@ -492,8 +475,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/noite-aula3/numeros_for.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="100">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula6/tabuada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula6/teste_lista.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula6/numeros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula6/jogo_dados_parte2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
