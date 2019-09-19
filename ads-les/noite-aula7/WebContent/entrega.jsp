@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Gestão de Entregas</h1>
-	<form>
+	<form action="./entregaController" method="post">
 		<table>
 			<tr>
 				<td>Id</td>

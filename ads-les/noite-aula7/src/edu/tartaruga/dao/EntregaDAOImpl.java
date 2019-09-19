@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import edu.tartaruga.entidade.Entrega;
 
-public class DAOExceptionImpl implements EntregaDAO {
+public class EntregaDAOImpl implements EntregaDAO {
 	@Override
 	public void adicionar(Entrega e) throws DAOException {
 		Connection con = DBUtil.getInstance().getConnection();
