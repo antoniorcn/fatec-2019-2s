@@ -1,0 +1,25 @@
+p {
+   font: 32px arial, sans-serif;
+   color: darkblue;
+}
+
+.azul-escuro {
+  font-family: arial, sans-serif;
+  color: darkblue;
+}
+
+.grande {
+     font-size: 72px;
+}
+
+.pequeno {
+     font-size: 16px;
+}
+
+#p3 {
+  border: 5px solid red;
+}
+
+.selecionavel:hover {
+  background-color: coral;
+}
