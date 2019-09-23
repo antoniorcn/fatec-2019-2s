@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/noite-aula7/hi-score-for.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/hi-score-unica.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/hi-score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/input-hiscore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/listas-parte1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/retangulo-dash.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/retangulo-numeros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/retangulo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/triangulo-inverso.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula7/triangulo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,9 +108,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="width" value="752" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -321,12 +310,12 @@
       <workItem from="1568466839636" duration="7061000" />
       <workItem from="1568642691555" duration="4086000" />
       <workItem from="1568818943389" duration="14000" />
-      <workItem from="1569070024546" duration="6582000" />
+      <workItem from="1569070024546" duration="7184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33247000" />
+    <option name="totallyTimeSpent" value="33849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -337,7 +326,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.049099836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
