@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="" />
+    <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manha-aula7/lista-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula7/lista-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula7/listas-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula7/retangulo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula7/tabuada.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,47 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/noite-aula7/listas-parte1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/noite-aula7/hi-score.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/noite-aula7/hi-score-for.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/noite-aula7/hi-score-unica.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/noite-aula7/input-hiscore.py">
+        <entry file="file://$PROJECT_DIR$/manha-aula7/lista-3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" selection-start-column="28" selection-end-column="28" />
+            <state relative-caret-position="272">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -104,6 +75,11 @@
         <option value="$PROJECT_DIR$/noite-aula7/hi-score-for.py" />
         <option value="$PROJECT_DIR$/noite-aula7/hi-score-unica.py" />
         <option value="$PROJECT_DIR$/noite-aula7/input-hiscore.py" />
+        <option value="$PROJECT_DIR$/manha-aula7/tabuada.py" />
+        <option value="$PROJECT_DIR$/manha-aula7/retangulo.py" />
+        <option value="$PROJECT_DIR$/manha-aula7/listas-1.py" />
+        <option value="$PROJECT_DIR$/manha-aula7/lista-2.py" />
+        <option value="$PROJECT_DIR$/manha-aula7/lista-3.py" />
       </list>
     </option>
   </component>
@@ -132,7 +108,7 @@
             <path>
               <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
               <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="noite-aula7" type="462c0819:PsiDirectoryNode" />
+              <item name="manha-aula7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,8 +147,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.input-hiscore">
-    <configuration name="hi-score-for" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.lista-3">
+    <configuration name="lista-2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,12 +156,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula7/hi-score-for.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula7/lista-2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,7 +170,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hi-score-unica" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="lista-3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,12 +178,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula7/hi-score-unica.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula7/lista-3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,7 +192,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hi-score" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="listas-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,12 +200,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula7/hi-score.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula7/listas-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,7 +214,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="input-hiscore" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="retangulo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,12 +222,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula7/input-hiscore.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula7/retangulo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,7 +236,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="listas-parte1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tabuada" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,12 +244,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula7/listas-parte1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula7/tabuada.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.input-hiscore" />
-        <item itemvalue="Python.hi-score-unica" />
-        <item itemvalue="Python.hi-score-for" />
-        <item itemvalue="Python.hi-score" />
-        <item itemvalue="Python.listas-parte1" />
+        <item itemvalue="Python.lista-3" />
+        <item itemvalue="Python.lista-2" />
+        <item itemvalue="Python.listas-1" />
+        <item itemvalue="Python.retangulo" />
+        <item itemvalue="Python.tabuada" />
       </list>
     </recent_temporary>
   </component>
@@ -311,22 +287,22 @@
       <workItem from="1568642691555" duration="4086000" />
       <workItem from="1568818943389" duration="14000" />
       <workItem from="1569070024546" duration="7184000" />
+      <workItem from="1569243246488" duration="6478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33849000" />
+    <option name="totallyTimeSpent" value="40327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.049099836" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40752864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -350,7 +326,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28150573" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40752864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,15 +357,17 @@
     <SUITE FILE_PATH="coverage/djd_prog2$tabuada__1_.coverage" NAME="tabuada (1) Coverage Results" MODIFIED="1568643677618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_str.coverage" NAME="variaveis_str Coverage Results" MODIFIED="1565622539205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis.coverage" NAME="variaveis Coverage Results" MODIFIED="1565621957583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
-    <SUITE FILE_PATH="coverage/djd_prog2$tabuada.coverage" NAME="tabuada Coverage Results" MODIFIED="1568475051527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
+    <SUITE FILE_PATH="coverage/djd_prog2$tabuada.coverage" NAME="tabuada Coverage Results" MODIFIED="1569244286125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$temperaturas.coverage" NAME="temperaturas Coverage Results" MODIFIED="1568471744660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$listas_parte1.coverage" NAME="listas-parte1 Coverage Results" MODIFIED="1569078085384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$letras.coverage" NAME="letras Coverage Results" MODIFIED="1568475320851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$pedra_papel_tesoura.coverage" NAME="pedra_papel_tesoura Coverage Results" MODIFIED="1567432847034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$numeros_for.coverage" NAME="numeros_for Coverage Results" MODIFIED="1568475485581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
+    <SUITE FILE_PATH="coverage/djd_prog2$lista_2.coverage" NAME="lista-2 Coverage Results" MODIFIED="1569252025553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$input_hiscore.coverage" NAME="input-hiscore Coverage Results" MODIFIED="1569079718527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$dados_piratas.coverage" NAME="dados_piratas Coverage Results" MODIFIED="1567437021371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo_numeros.coverage" NAME="retangulo-numeros Coverage Results" MODIFIED="1569072807898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
+    <SUITE FILE_PATH="coverage/djd_prog2$lista_3.coverage" NAME="lista-3 Coverage Results" MODIFIED="1569252417423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$hi_score_for.coverage" NAME="hi-score-for Coverage Results" MODIFIED="1569079019515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_find.coverage" NAME="teste_find Coverage Results" MODIFIED="1565623270312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$jogo_dados_parte2.coverage" NAME="jogo_dados_parte2 Coverage Results" MODIFIED="1568647297852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
@@ -399,7 +377,8 @@
     <SUITE FILE_PATH="coverage/djd_prog2$hi_score_unica.coverage" NAME="hi-score-unica Coverage Results" MODIFIED="1569079310875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo_dash.coverage" NAME="retangulo-dash Coverage Results" MODIFIED="1569072155497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$ordenacao2.coverage" NAME="ordenacao2 Coverage Results" MODIFIED="1566832381170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
-    <SUITE FILE_PATH="coverage/djd_prog2$retangulo.coverage" NAME="retangulo Coverage Results" MODIFIED="1569070680892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
+    <SUITE FILE_PATH="coverage/djd_prog2$retangulo.coverage" NAME="retangulo Coverage Results" MODIFIED="1569246940211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
+    <SUITE FILE_PATH="coverage/djd_prog2$listas_1.coverage" NAME="listas-1 Coverage Results" MODIFIED="1569251855264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$explorar_string.coverage" NAME="explorar_string Coverage Results" MODIFIED="1567432448371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$aleatorio.coverage" NAME="aleatorio Coverage Results" MODIFIED="1567265682545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$triangulo_inverso.coverage" NAME="triangulo-inverso Coverage Results" MODIFIED="1569076840871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
@@ -609,22 +588,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/noite-aula7/listas-parte1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/noite-aula7/hi-score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/noite-aula7/hi-score-unica.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="200">
+          <caret line="8" column="16" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -635,10 +607,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/noite-aula7/hi-score-unica.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/noite-aula7/input-hiscore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula7/tabuada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula7/retangulo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula7/listas-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula7/lista-2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha-aula7/lista-3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
