@@ -10,6 +10,16 @@
 </head>
 <body>
 	<h1>Gestão de Entregas</h1>
+	
+	<%
+		String msg = (String)session.getAttribute("MENSAGEM");
+		if (msg != null) { 
+	%>
+		<h3><%=msg%></h3>
+	<%
+			session.setAttribute("MENSAGEM", null);
+		}%>
+	
 	<form action="./entregaController" method="post" id="frm">
 		<div class="container">
 			<div class="form-group">
@@ -40,6 +50,7 @@
 			</div>	
 			<div class="form-group">
 				<button class="btn btn-primary" type="submit" name="cmd" value="adicionar">Adicionar</button>
+				<button class="btn btn-primary" type="submit" name="cmd" value="pesquisar">Pesquisar</button>
 				<button class="btn btn-primary" type="button" name="cmd" onclick="enviar();" 
 						value="adicionarJSON">Adicionar JSON</button>
 			</div>

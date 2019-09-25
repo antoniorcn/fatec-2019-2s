@@ -1,9 +1,11 @@
 package edu.tartaruga.dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import edu.tartaruga.entidade.Entrega;
 
@@ -29,5 +31,34 @@ public class EntregaDAOImpl implements EntregaDAO {
 		} catch (SQLException e1) {
 			throw new DAOException(e1);
 		}	
+	}
+
+	@Override
+	public List<Entrega> pesquisar(String origem) throws DAOException {
+		Connection con = DBUtil.getInstance().getConnection();
+		List<Entrega> entregas = new ArrayList<>();
+		try {
+			String sql = 
+					"SELECT * FROM entrega WHERE origem LIKE ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setString(1, "%" + origem + "%");
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) { 
+				Entrega e = new Entrega();
+				e.setId(rs.getLong("id"));
+				e.setOrigem(rs.getString("origem"));
+				e.setDestino(rs.getString("destino"));
+				e.setData(rs.getDate("data"));
+				e.setDimensoes(rs.getString("dimensoes"));
+				e.setFrete(rs.getFloat("frete"));
+				e.setPeso(rs.getFloat("peso"));
+				e.setStatus(rs.getString("status"));
+				entregas.add(e);
+			}
+			con.close();
+		} catch (SQLException e1) {
+			throw new DAOException(e1);
+		}	
+		return entregas;
 	}
 }

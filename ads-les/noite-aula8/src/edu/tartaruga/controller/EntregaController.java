@@ -1,11 +1,13 @@
 package edu.tartaruga.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import edu.tartaruga.dao.DAOException;
 import edu.tartaruga.dao.EntregaDAO;
@@ -14,32 +16,48 @@ import edu.tartaruga.entidade.Entrega;
 
 @WebServlet("/entregaController")
 public class EntregaController extends HttpServlet {
-	
+
+	private List<Entrega> fazerPesquisa(HttpSession session, String origem) throws DAOException { 
+		EntregaDAO entregaDAO = new EntregaDAOImpl();
+		List<Entrega> entregas = entregaDAO.pesquisar(origem);
+		session.setAttribute("LISTA", entregas);
+		return entregas;
+	}
+
 	@Override
 	public void doPost(HttpServletRequest request, 
 			HttpServletResponse response) {
-		
+
 		String strId = request.getParameter("id");
 		String strOrigem = request.getParameter("origem");
 		String strDestino = request.getParameter("destino");
 		String strStatus = request.getParameter("status");
-		
-		Entrega e = new Entrega();
-		e.setId(Long.parseLong(strId));
-		e.setOrigem(strOrigem);
-		e.setDestino(strDestino);
-		e.setStatus(strStatus);
-		
-		EntregaDAO entregaDAO = new EntregaDAOImpl();
+		String cmd = request.getParameter("cmd");
+		String mensagem = "Erro ao executar a ação";
+		HttpSession session = request.getSession();
 		try {
-			entregaDAO.adicionar(e);
-			System.out.println("Entrega gravada com sucesso");
+			if ("adicionar".equals(cmd)) { 
+				Entrega e = new Entrega();
+				e.setId(Long.parseLong(strId));
+				e.setOrigem(strOrigem);
+				e.setDestino(strDestino);
+				e.setStatus(strStatus);
+				
+				EntregaDAO entregaDAO = new EntregaDAOImpl();
+				entregaDAO.adicionar(e);
+				mensagem = "Entrega gravada com sucesso";
+
+			} else if ("pesquisar".equals(cmd)) {
+				List<Entrega> entregas = fazerPesquisa(session, strOrigem);
+				mensagem = "Pesquisa executada com sucesso, foram encontradas " +
+								entregas.size() + " entregas";
+			}
 		} catch (DAOException e1) {
-			System.out.println("Erro ao gravar a entrega");
 			e1.printStackTrace();
 		}
 		
-		
+		session.setAttribute("MENSAGEM", mensagem);
+
 		try {
 			response.sendRedirect("./entrega.jsp");
 		} catch (IOException e1) {
