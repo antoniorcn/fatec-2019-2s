@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manha-aula7/lista-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula7/lista-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula7/listas-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula7/retangulo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula7/tabuada.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +13,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manha-aula7/lista-3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="410">
               <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
@@ -96,25 +89,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="manha-aula7" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -288,14 +263,16 @@
       <workItem from="1568818943389" duration="14000" />
       <workItem from="1569070024546" duration="7184000" />
       <workItem from="1569243246488" duration="6478000" />
+      <workItem from="1569332616181" duration="156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40327000" />
+    <option name="totallyTimeSpent" value="40483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -651,7 +628,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manha-aula7/lista-3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="410">
           <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
