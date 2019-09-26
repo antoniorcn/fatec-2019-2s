@@ -35,6 +35,7 @@ public class EntregaController extends HttpServlet {
 		String cmd = request.getParameter("cmd");
 		String mensagem = "Erro ao executar a ação";
 		HttpSession session = request.getSession();
+		EntregaDAO entregaDAO = new EntregaDAOImpl();
 		try {
 			if ("adicionar".equals(cmd)) { 
 				Entrega e = new Entrega();
@@ -42,15 +43,18 @@ public class EntregaController extends HttpServlet {
 				e.setOrigem(strOrigem);
 				e.setDestino(strDestino);
 				e.setStatus(strStatus);
-				
-				EntregaDAO entregaDAO = new EntregaDAOImpl();
 				entregaDAO.adicionar(e);
+				fazerPesquisa(session, "");
 				mensagem = "Entrega gravada com sucesso";
-
 			} else if ("pesquisar".equals(cmd)) {
 				List<Entrega> entregas = fazerPesquisa(session, strOrigem);
 				mensagem = "Pesquisa executada com sucesso, foram encontradas " +
 								entregas.size() + " entregas";
+			} else if ("apagar".equals(cmd)) {
+				long id = Long.parseLong(strId);
+				entregaDAO.removerPorId(id);
+				fazerPesquisa(session, "");
+				mensagem = "Registro com Id " + id + "removido com sucesso";
 			}
 		} catch (DAOException e1) {
 			e1.printStackTrace();

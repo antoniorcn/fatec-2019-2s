@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="java.util.List, edu.tartaruga.entidade.Entrega" %>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Gestão de Entregas</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -13,6 +15,7 @@
 	
 	<%
 		String msg = (String)session.getAttribute("MENSAGEM");
+		List<Entrega> lista = (List<Entrega>)session.getAttribute("LISTA");
 		if (msg != null) { 
 	%>
 		<h3><%=msg%></h3>
@@ -56,6 +59,39 @@
 			</div>
 		</div>
 	</form>
+	<%if (lista != null && lista.size() > 0) {%>
+	<div class="container">
+		<table class="table table-striped">
+			<thead class="table-dark">
+				<tr>
+					<th>Id</th>
+					<th>Origem</th>
+					<th>Destino</th>
+					<th>Status</th>
+					<th>Frete</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<%for (Entrega e : lista) { %>
+				<tr>
+					<td><%=e.getId()%></td>
+					<td><%=e.getOrigem()%></td>
+					<td><%=e.getDestino()%></td>
+					<td><%=e.getStatus()%></td>
+					<td><%=e.getFrete()%></td>
+					<td>
+						<button type="button" onclick="apagarRegistro(<%=e.getId()%>);" 
+								class="btn btn-danger" aria-label="Left Align">
+  								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							</button>
+					</td>
+				</tr>
+				<%} %>
+			</tbody>
+		</table>
+	</div>
+	<%}%>
 	
 	<script>
 		function objectifyForm(formArray) {//serialize data function
@@ -80,8 +116,17 @@
 				console.log("Status");
 				console.log(status);
 			}
-			var url = "http://localhost:8080/noite-aula7/entregaControllerJSON";
+			var url = "http://localhost:8080/noite-aula8/entregaControllerJSON";
 			$.post(url, arrJsonStr, callback);
+		}
+		
+		function apagarRegistro(id) {
+			function callback(resposta, status) {
+				location.reload();
+			}
+			
+			var url = "http://localhost:8080/noite-aula8/entregaController";
+			$.post(url, {"id":id, "cmd":"apagar"}, callback);
 		}
 	</script>
 </body>

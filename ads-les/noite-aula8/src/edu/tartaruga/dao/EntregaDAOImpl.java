@@ -61,4 +61,19 @@ public class EntregaDAOImpl implements EntregaDAO {
 		}	
 		return entregas;
 	}
+
+	@Override
+	public void removerPorId(long id) throws DAOException {
+		Connection con = DBUtil.getInstance().getConnection();
+		try {
+			String sql = 
+					"DELETE FROM entrega WHERE id = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setLong(1, id);
+			stmt.executeUpdate();
+			con.close();
+		} catch (SQLException e1) {
+			throw new DAOException(e1);
+		}			
+	}
 }
