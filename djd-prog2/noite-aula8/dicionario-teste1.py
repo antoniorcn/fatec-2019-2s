@@ -10,6 +10,7 @@ while not sair:
     print("Você está na sala {} do corredor principal".format(pos))
     if mapa_jogo[pos] != 0:
         print("Você encontrou alguma coisa: {}".format(mapa_jogo[pos]))
+    print ("Dados do Alucard: ", alucard)
     tecla = input("Tecle (a) para ir a esquerda e (d) para a direita e (x) para sair")
     letra = tecla[0].lower()
     if letra == "a":
