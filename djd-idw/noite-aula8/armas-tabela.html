@@ -95,17 +95,39 @@
         </div>
         <div class="form-group row">
           <div class="col">
-            <input type="button" value="Enviar" class="btn btn-primary" onclick="$('.alert').alert('show');"/>
+            <input id="registrar" type="button" value="Registrar" class="btn btn-primary"/>
           </div>
         </div>
 
-        <div class="alert alert-success alert-dismissible fade hide" role="alert">
-            <strong>Arma registrada</strong> Sua arma foi registrada com sucesso
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+        <div id="modal1" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Registro de Armas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <strong>Arma registrada</strong> Sua arma foi registrada com sucesso
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </form>
     </div>
+
+    <script>
+      // $("#registrar").click(function(){
+      //   $("#alerta1").removeClass("hide");
+      //   $("#alerta1").addClass("show");
+      // });
+      $("#registrar").click(function(){
+        $('#modal1').modal('toggle');
+      });
+    </script>
   </body>
 </html>
