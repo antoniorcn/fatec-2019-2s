@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p>Texto inicial do HTML</p>
+
+
+    <p id="p1">Este texto originalmente contem HTML</p>
+
+    <script>
+      var elemento = document.getElementById("p1")
+      console.log("Estava escrito: " + elemento.innerHTML)
+      elemento.innerHTML = "Este texto agora contem Javascript"
+      elemento.style["color"] = "yellow"
+      console.log(elemento)
+    </script>
+
+  </body>
+</html>
