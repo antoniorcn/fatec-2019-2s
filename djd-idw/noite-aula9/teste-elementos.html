@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <h1>Titulo</h1>
+    <p id="p1">Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+    <script type="text/javascript">
+      var p1 = document.getElementById("p1")
+      p1.innerHTML = "Meu 1º Paragrafo"
+      p1.style.color = "Red"
+      p1.style["font-size"] = "200%"
+      p1.style.display = "none"
+
+      function toggle() {
+        if (p1.style.display == "none") {
+          p1.style.display = "block"
+        } else {
+          p1.style.display = "none"
+        }
+      }
+    </script>
+    <button type="button" value="trocar"
+    onclick="toggle();">Trocar visibilidade</button>
+  </body>
+</html>
