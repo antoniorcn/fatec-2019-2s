@@ -1,5 +1,6 @@
 package edu.curso;
 
+import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -53,6 +54,7 @@ public class SistemaSolar extends Application {
 	    gc.setStroke( Color.BLACK );
 	    gc.setLineWidth(2);
 	    gc.fillRect(100, 100, 200, 200);
+
 	    gc.setFill( Color.YELLOW );
 	    gc.setStroke( Color.BLUE );
 	    gc.beginPath();
@@ -63,8 +65,7 @@ public class SistemaSolar extends Application {
 	    // Font theFont = Font.font( "Times New Roman", FontWeight.BOLD, 48 );
 	    // gc.setFont( theFont );
 	    // gc.fillText( "Hello, World!", 60, 50 );
-	    // gc.strokeText( "Hello, World!", 60, 50 );
-	    
+	    // gc.strokeText( "Hello, World!", 60, 50 );	    
 	    theStage.show();
 	}
 
