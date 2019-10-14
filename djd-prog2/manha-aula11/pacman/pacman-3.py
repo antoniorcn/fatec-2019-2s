@@ -3,6 +3,7 @@ import pygame
 AMARELO = (255, 255, 0)
 PRETO = (0, 0, 0)
 AZUL = (0, 0, 255)
+VELOCIDADE_BOCA = 0.3
 
 cenario = [
     [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
@@ -30,6 +31,8 @@ corpo_coluna = 5
 intencao_linha = corpo_linha
 intencao_coluna = corpo_coluna
 pontos = 0
+abertura = 0
+vel_abertura = VELOCIDADE_BOCA
 tamanho = int(600 / 16)
 
 
@@ -49,12 +52,18 @@ def cenario_calcular_regras(cen):
 
 
 def desenhar_pacman(tela):
+    global abertura, vel_abertura
     raio = int(tamanho / 2)
     corpo_x = corpo_coluna * tamanho + raio
     corpo_y = corpo_linha * tamanho + raio
     fundo_boca = (corpo_x, corpo_y)
-    labio_inferior = (corpo_x + raio, corpo_y)
-    labio_superior = (corpo_x + raio, corpo_y - raio)
+    labio_inferior = (corpo_x + raio, corpo_y + abertura)
+    labio_superior = (corpo_x + raio, corpo_y - abertura)
+    abertura = abertura + vel_abertura
+    if abertura > raio:
+        vel_abertura = - VELOCIDADE_BOCA
+    if abertura <= 0:
+        vel_abertura = VELOCIDADE_BOCA
     olho_raio = int(raio / 10)
     olho_x = corpo_x + int(raio / 6)
     olho_y = corpo_y - int(2 * raio / 3)
