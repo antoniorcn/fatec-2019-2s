@@ -27,7 +27,20 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600), 0)
 corpo_linha = 2
 corpo_coluna = 5
+intencao_linha = corpo_linha
+intencao_coluna = corpo_coluna
 tamanho = int(600 / 16)
+
+
+def cenario_calcular_regras(cen):
+    global corpo_linha, corpo_coluna, intencao_linha, intencao_coluna
+    if 0 <= intencao_linha < 16 and 0 <= intencao_coluna < 16\
+            and cen[intencao_linha][intencao_coluna] != 2:
+        corpo_linha = intencao_linha
+        corpo_coluna = intencao_coluna
+    else:
+        intencao_linha = corpo_linha
+        intencao_coluna = corpo_coluna
 
 
 def desenhar_pacman(tela):
@@ -64,6 +77,9 @@ def desenhar_cenario(tela, cena, tamanho):
 
 
 while True:
+    # Calcular Regras
+    cenario_calcular_regras(cenario)
+
     # Desenha tela
     screen.fill(PRETO)
     desenhar_cenario(screen, cenario, tamanho)
@@ -76,4 +92,10 @@ while True:
             exit()
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_RIGHT:
-                corpo_coluna += 1
+                intencao_coluna += 1
+            if e.key == pygame.K_LEFT:
+                intencao_coluna -= 1
+            if e.key == pygame.K_UP:
+                intencao_linha -= 1
+            if e.key == pygame.K_DOWN:
+                intencao_linha += 1
