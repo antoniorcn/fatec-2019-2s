@@ -40,7 +40,6 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3619936623.index
 1858871612.index
 3444957733.index
-3002865041.index
 933785866.index
 2908856043.index
 2692393090.index

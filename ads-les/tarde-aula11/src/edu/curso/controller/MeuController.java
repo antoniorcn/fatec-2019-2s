@@ -14,8 +14,10 @@ public class MeuController {
 	}
 	
 	@RequestMapping("/msg")
-	public ModelAndView msg() { 
-		return new ModelAndView("msg", "TEXTO", "Este texto veio do controller");
+	public ModelAndView msg() {
+		ModelAndView model = new ModelAndView("msg");
+		model.addObject("TEXTO", "Este texto veio do controller");
+		return model;
 	}
 
 }
