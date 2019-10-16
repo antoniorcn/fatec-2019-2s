@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1505">
+            <state relative-caret-position="510">
               <caret line="69" column="22" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="22" />
             </state>
           </provider>
@@ -99,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="105" />
     <option name="y" value="52" />
     <option name="width" value="1380" />
@@ -112,31 +111,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="manha-aula11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="manha-aula11" type="462c0819:PsiDirectoryNode" />
-              <item name="pacman" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -327,15 +302,16 @@
       <workItem from="1570273526537" duration="605000" />
       <workItem from="1570456028568" duration="5732000" />
       <workItem from="1570475572430" duration="1212000" />
-      <workItem from="1571057750246" duration="7482000" />
+      <workItem from="1571057750246" duration="8047000" />
+      <workItem from="1571088377003" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70320000" />
+    <option name="totallyTimeSpent" value="70900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25340393" />
@@ -805,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1505">
+        <state relative-caret-position="510">
           <caret line="69" column="22" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="22" />
         </state>
       </provider>
