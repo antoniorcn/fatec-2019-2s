@@ -1,0 +1,74 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Gestão de Brinquedos</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</head>
+<body>
+	<h1>Gestão de Brinquedos</h1>
+	
+	<form id="frm" action="#" th:action="@{/atualizar}" method="post" 
+				th:object="${brinquedoAtual}">
+		<div class="container">
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+	  			<strong>Mensagem</strong>
+	  			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+	  			</button>
+			</div>
+			<div class="form-group">
+				<label for="">Id</label>
+				<input th:field="*{id}" name="id" id="txtId" readonly="readonly" class="form-control" value="0"/>
+			</div>
+			<div class="form-group">
+				<label for="">Categoria</label>
+				<select name="categoria" id="txtCategoria" class="form-control">
+					<option th:each="c : ${categorias}" th:value="${c}" th:text="${c}"/>
+				</select>
+			</div>			
+			<div class="form-group">
+				<label for="">Nome</label>
+				<input th:field="*{nome}" name="nome" id="txtNome" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label for="">Fabricante</label>
+				<input th:field="*{fabricante}" name="fabricante" id="txtFabricante" class="form-control"/>
+			</div>			
+			<div class="form-group">
+				<button type="submit" name="cmd" value="salvar" class="btn btn-primary">Salvar</button>
+				<button type="submit" name="cmd" value="pesquisar" class="btn btn-primary">Pesquisar</button>
+			</div>			
+		</div>			
+	</form>
+
+	<div class="container">
+		<table class="table table-striped">
+			<thead class="thead-dark">
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Fabricante</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Id</td>
+					<td>Nome</td>
+					<td>Fabricante</td>
+					<td>
+						<button type="button" 
+							class="btn btn-danger" aria-label="Left Align">
+									<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
