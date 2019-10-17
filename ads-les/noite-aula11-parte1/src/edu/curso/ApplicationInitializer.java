@@ -13,7 +13,7 @@ public class ApplicationInitializer implements WebApplicationInitializer{
 		AnnotationConfigWebApplicationContext appCtx =
 				new AnnotationConfigWebApplicationContext();
 		appCtx.setServletContext(ctx);
-		appCtx.register(Configuracao.class);
+		appCtx.register(ConfiguracaoThymeleaf.class);
 		
 		Dynamic dispatcher = ctx.addServlet("dispatcher", 
 				new DispatcherServlet(appCtx));
