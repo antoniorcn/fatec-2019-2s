@@ -1,8 +1,12 @@
 package edu.curso.boundary;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import edu.curso.control.QuartoHotelControl;
 import edu.curso.entidades.QuartoHotel;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -17,8 +21,8 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class QuartoHotelBoundary extends Application {
-	private List<QuartoHotel> lista = new ArrayList<>();
+public class QuartoHotelBoundary extends Application implements EventHandler<ActionEvent> {
+	private QuartoHotelControl control = new QuartoHotelControl();
 	private TextField txtId = new TextField();
 	private TextField txtNumeroQuarto = new TextField();
 	private TextField txtDataReserva = new TextField();
@@ -27,6 +31,36 @@ public class QuartoHotelBoundary extends Application {
 	private TextField txtObservacao = new TextField();
 	private Button btnAdicionar = new Button("Adicionar");
 	private Button btnPesquisar = new Button("Pesquisar");
+	
+	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
+	public QuartoHotel boundaryParaEntidade() { 
+		QuartoHotel q = new QuartoHotel();
+		try {
+			q.setNumeroQuarto(txtNumeroQuarto.getText());
+			q.setObservacao(txtObservacao.getText());
+			q.setId(Long.parseLong(txtId.getText()));
+			q.setNumeroCamas(Integer.parseInt(txtNumeroCamas.getText()));
+			q.setValorDiaria(Double.parseDouble(txtValorDiaria.getText()));
+			Date d = sdf.parse(txtDataReserva.getText());
+			q.setDataReserva(d);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return q;
+	}
+	
+	public void entidadeParaBoundary(QuartoHotel q) { 
+		if (q != null) { 
+			txtNumeroQuarto.setText(q.getNumeroQuarto());
+			txtObservacao.setText(q.getObservacao());
+			txtId.setText(String.valueOf(q.getId()));
+			txtValorDiaria.setText(String.valueOf(q.getValorDiaria()));
+			txtNumeroCamas.setText(String.valueOf(q.getNumeroCamas()));
+			txtDataReserva.setText(sdf.format(q.getDataReserva()));
+		}
+	}
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		BorderPane painelPrincipal = new BorderPane();
@@ -59,33 +93,26 @@ public class QuartoHotelBoundary extends Application {
 		painelPrincipal.setCenter(painelCampos);
 		painelPrincipal.setBottom(painelBotoes);
 		
-		btnAdicionar.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				QuartoHotel q = new QuartoHotel();
-				q.setNumeroQuarto(txtNumeroQuarto.getText());
-				q.setObservacao(txtObservacao.getText());
-				lista.add(q);
-			} 
-		});
-		
-		btnPesquisar.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				for (QuartoHotel q : lista) { 
-					if (q.getNumeroQuarto().contains(txtNumeroQuarto.getText())) { 
-						txtNumeroQuarto.setText(q.getNumeroQuarto());
-						txtObservacao.setText(q.getObservacao());
-					}
-				}
-			} 
-		});
-		
+		btnAdicionar.addEventHandler(ActionEvent.ANY, this);
+		btnPesquisar.addEventHandler(ActionEvent.ANY, this);
+	
 		Scene scn = new Scene(painelPrincipal, 400, 200);
 		primaryStage.setScene(scn);
 		primaryStage.setTitle("Gestão de Quarto de Hotel");
 		primaryStage.show();
 	}
+	
+	@Override
+	public void handle(ActionEvent event) {
+		if (event.getTarget() == btnAdicionar) { 
+			control.adicionar( boundaryParaEntidade() );
+		} else if (event.getTarget() == btnPesquisar) {
+			String numQuarto = txtNumeroQuarto.getText();
+			QuartoHotel q = control.pesquisarPorNumeroQuarto(numQuarto);
+			entidadeParaBoundary(q);			
+		}
+	}
+	
 	
 	public static void main(String[] args) {
 		launch(args);
