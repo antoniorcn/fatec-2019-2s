@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/noite-aula10/modulo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noite-aula10/pacman-1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,10 +16,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py">
+        <entry file="file://$PROJECT_DIR$/noite-aula10/pacman-1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="69" column="22" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="88">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/noite-aula10/modulo1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -44,8 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/manha/aula2/variaveis_float.py" />
-        <option value="$PROJECT_DIR$/manha/aula2/variaveis_str.py" />
         <option value="$PROJECT_DIR$/manha/aula2/teste_find.py" />
         <option value="$PROJECT_DIR$/manha-aula4/temperatura.py" />
         <option value="$PROJECT_DIR$/manha-aula4/conselheiro_21.py" />
@@ -95,6 +105,8 @@
         <option value="$PROJECT_DIR$/manha-aula11/pacman/pacman-1.py" />
         <option value="$PROJECT_DIR$/manha-aula11/pacman/pacman-2.py" />
         <option value="$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py" />
+        <option value="$PROJECT_DIR$/noite-aula10/modulo1.py" />
+        <option value="$PROJECT_DIR$/noite-aula10/pacman-1.py" />
       </list>
     </option>
   </component>
@@ -111,7 +123,25 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
+              <item name="noite-aula10" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -125,7 +155,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -151,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pacman-3">
+  <component name="RunManager" selected="Python.pacman-1 (1)">
     <configuration name="bolinha" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,7 +204,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="event-teste" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pacman-1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,12 +212,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula10/event-teste.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula10/pacman-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pacman-1 (1)" />
         <item itemvalue="Python.pacman-3" />
         <item itemvalue="Python.pacman-2" />
         <item itemvalue="Python.pacman-1" />
         <item itemvalue="Python.bolinha" />
-        <item itemvalue="Python.event-teste" />
       </list>
     </recent_temporary>
   </component>
@@ -304,11 +334,13 @@
       <workItem from="1570475572430" duration="1212000" />
       <workItem from="1571057750246" duration="8047000" />
       <workItem from="1571088377003" duration="15000" />
+      <workItem from="1571489660281" duration="6000" />
+      <workItem from="1571489779118" duration="1983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70900000" />
+    <option name="totallyTimeSpent" value="72889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -319,7 +351,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4304419" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4304419" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,6 +404,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$listas_parte1.coverage" NAME="listas-parte1 Coverage Results" MODIFIED="1569078085384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$numeros_for.coverage" NAME="numeros_for Coverage Results" MODIFIED="1568475485581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$input_hiscore.coverage" NAME="input-hiscore Coverage Results" MODIFIED="1569079718527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_1__1_.coverage" NAME="pacman-1 (1) Coverage Results" MODIFIED="1571492714112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$dados_piratas.coverage" NAME="dados_piratas Coverage Results" MODIFIED="1567437021371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo_numeros.coverage" NAME="retangulo-numeros Coverage Results" MODIFIED="1569072807898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_find.coverage" NAME="teste_find Coverage Results" MODIFIED="1565623270312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
@@ -413,24 +446,10 @@
     <SUITE FILE_PATH="coverage/djd_prog2$explorar_string.coverage" NAME="explorar_string Coverage Results" MODIFIED="1567432448371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$aleatorio.coverage" NAME="aleatorio Coverage Results" MODIFIED="1567265682545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$triangulo_inverso.coverage" NAME="triangulo-inverso Coverage Results" MODIFIED="1569076840871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
-    <SUITE FILE_PATH="coverage/djd_prog2$pacman_3.coverage" NAME="pacman-3 Coverage Results" MODIFIED="1571067343791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula11/pacman" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_3.coverage" NAME="pacman-3 Coverage Results" MODIFIED="1571489782261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula11/pacman" />
     <SUITE FILE_PATH="coverage/djd_prog2$triangulo.coverage" NAME="triangulo Coverage Results" MODIFIED="1569073166386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manha-aula2/variaveis_float.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manha-aula2/variaveis_str.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manha-aula2/teste_find.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -781,8 +800,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manha-aula11/pacman/pacman-3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="1260">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noite-aula10/modulo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noite-aula10/pacman-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
