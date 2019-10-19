@@ -12,7 +12,7 @@ cenario = [
     [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
     [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
     [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
-    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
     [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
     [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
     [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
@@ -27,12 +27,16 @@ cenario = [
 
 
 def cenario_pintar():
+    tamanho = 40
     for lin_idx in range(0, 16):
         for col_idx in range(0, 16):
             cor = PRETO
             if cenario[lin_idx][col_idx] == 2:
                 cor = AMARELO
-            tela.set_at((col_idx, lin_idx), cor)
+            # tela.set_at((col_idx, lin_idx), cor)
+            x = col_idx * tamanho
+            y = lin_idx * tamanho
+            pygame.draw.rect(tela, cor, ((x, y), (tamanho, tamanho)), 0)
             # print(cenario[lin_idx][col_idx], " ", end="")
         # print()
 
