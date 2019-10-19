@@ -1,0 +1,86 @@
+<html>
+  <head>
+      <script>
+        var canvas
+        var ctx
+        function carga(e) {
+            canvas = document.getElementById("canvas")
+            ctx = canvas.getContext("2d")
+            console.log(canvas)
+            console.log(ctx)
+            pintarCenario()
+            pintarPacman()
+        }
+
+        function rad( angulo ) {
+          return angulo * Math.PI / 180.0
+        }
+
+        function pintarCenario() {
+          var tamanho = 20
+          cenario = [
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            [2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 2, 2, 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+          ]
+          for (var linha = 0; linha < 16; linha++) {
+            for (var coluna=0; coluna < 16; coluna++) {
+              var x = coluna * tamanho
+              var y = linha * tamanho
+              cor = "black"
+              if (cenario[linha][coluna] == 2) {
+                  cor = "blue"
+              }
+              ctx.fillStyle = cor
+              ctx.fillRect(x, y, tamanho, tamanho)
+            }
+          }
+        }
+
+        function pintarPacman() {
+          //ctx.fillStyle = "yellow"
+          //ctx.fillRect(200, 100, 400, 400)
+          ctx.fillStyle="yellow"
+          ctx.beginPath()
+          //ctx.moveTo(400, 300)
+          //ctx.lineTo(800, 0)
+          ctx.arc(400, 300, 100, rad(0), rad(330))
+          ctx.lineTo(400, 300)
+          ctx.lineTo(500, 300)
+          ctx.moveTo(400, 300)
+          ctx.fill()
+          ctx.stroke()
+
+          ctx.fillStyle = "black"
+          ctx.beginPath()
+          ctx.arc(440, 230, 10, rad(0), rad(360))
+          ctx.moveTo(440, 230)
+          ctx.fill()
+          ctx.stroke()
+
+        }
+
+        document.addEventListener("DOMContentLoaded", carga)
+
+      </script>
+  </head>
+
+  <body>
+    <h1>Jogo do Pacman</h1>
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </body>
+
+</html>

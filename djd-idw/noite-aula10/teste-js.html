@@ -1,0 +1,27 @@
+<html>
+  <head>
+      <script>
+        console.log("Script Inicio do Head")
+      </script>
+      <script src="./script2.js" type="text/javascript"></script>
+      <script>
+        console.log("Script Fim do Head")
+
+        function domloaded( e ) {
+          console.log("Todo o HTML DOM foi carregado")
+        }
+
+        function carregado( e ) {
+          var img = document.getElementById("img")
+          console.log("Imagem")
+          console.log(img)
+        }
+
+        window.addEventListener("load", carregado)
+        document.addEventListener("DOMContentLoaded", domloaded);
+      </script>
+  </head>
+  <body>
+    <img id="img" src="./tenis.jpg"/>
+  </body>
+</html>
