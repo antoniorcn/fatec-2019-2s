@@ -1,17 +1,43 @@
 import pygame
+from random import randint
 
 PRETO = (0, 0, 0)
 AMARELO = (255, 255, 0)
 tela = pygame.display.set_mode((800, 600), 0)
 
-while True:
-    # Calcular Regras
+cenario = [
+    [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+    [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 
-    # Pintar
-    tela.fill(PRETO)
-    tamanho = 100
-    px = 400
-    py = 300
+]
+
+
+def cenario_pintar():
+    for lin_idx in range(0, 16):
+        for col_idx in range(0, 16):
+            cor = PRETO
+            if cenario[lin_idx][col_idx] == 2:
+                cor = AMARELO
+            tela.set_at((col_idx, lin_idx), cor)
+            # print(cenario[lin_idx][col_idx], " ", end="")
+        # print()
+
+
+def pacman_pintar(px, py, tamanho):
     p_raio = tamanho // 2
     centro = (px, py)
     labio_superior = (px + tamanho, py - p_raio)
@@ -23,8 +49,16 @@ while True:
     olho_x = px + p_raio // 3
     olho_y = py - p_raio // 2
     pygame.draw.circle(tela, PRETO, (olho_x, olho_y),
-                       p_raio // 5,  0)
+                       p_raio // 5, 0)
 
+
+while True:
+    # Calcular Regras
+
+    # Pintar
+    tela.fill(PRETO)
+    pacman_pintar(400, 300, 100)
+    cenario_pintar()
     pygame.display.update()
 
     # Captura Eventos

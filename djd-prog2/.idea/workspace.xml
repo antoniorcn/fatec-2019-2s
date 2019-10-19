@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/noite-aula10/modulo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula10/pacman-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noite-aula10/pacman-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/noite-aula10/pacman-1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/noite-aula10/pacman-1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="346">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -335,12 +335,12 @@
       <workItem from="1571057750246" duration="8047000" />
       <workItem from="1571088377003" duration="15000" />
       <workItem from="1571489660281" duration="6000" />
-      <workItem from="1571489779118" duration="1983000" />
+      <workItem from="1571489779118" duration="3875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72889000" />
+    <option name="totallyTimeSpent" value="74781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -351,7 +351,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4304419" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24713585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,7 +404,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$listas_parte1.coverage" NAME="listas-parte1 Coverage Results" MODIFIED="1569078085384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$numeros_for.coverage" NAME="numeros_for Coverage Results" MODIFIED="1568475485581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$input_hiscore.coverage" NAME="input-hiscore Coverage Results" MODIFIED="1569079718527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
-    <SUITE FILE_PATH="coverage/djd_prog2$pacman_1__1_.coverage" NAME="pacman-1 (1) Coverage Results" MODIFIED="1571492714112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula10" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_1__1_.coverage" NAME="pacman-1 (1) Coverage Results" MODIFIED="1571495158277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$dados_piratas.coverage" NAME="dados_piratas Coverage Results" MODIFIED="1567437021371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo_numeros.coverage" NAME="retangulo-numeros Coverage Results" MODIFIED="1569072807898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_find.coverage" NAME="teste_find Coverage Results" MODIFIED="1565623270312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
@@ -814,8 +814,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/noite-aula10/pacman-1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="346">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
