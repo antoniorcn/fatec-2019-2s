@@ -75,6 +75,9 @@ while True:
         pacman_intencao_coluna = pacman_coluna
         pacman_intencao_linha = pacman_linha
 
+    if cenario[pacman_linha][pacman_coluna] == 1:
+        cenario[pacman_linha][pacman_coluna] = 0
+
     # Pintar
     tela.fill(PRETO)
     cenario_pintar(tamanho)
