@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manha_aula12/edu/carro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha_aula12/modulo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha_aula12/testar_carro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha_aula12/teste_oo_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha_aula12/pacman-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha_aula12/pacman.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manha_aula12/edu/carro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manha_aula12/testar_carro.py">
+        <entry file="file://$PROJECT_DIR$/manha_aula12/pacman-4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/noite-aula2/aleatorio.py" />
         <option value="$PROJECT_DIR$/noite-aula3/temperatura.py" />
         <option value="$PROJECT_DIR$/noite-aula3/temperaturas.py" />
         <option value="$PROJECT_DIR$/noite-aula3/ordenar2.py" />
@@ -108,6 +99,7 @@
         <option value="$PROJECT_DIR$/manha-aula11/pacman/carro.py" />
         <option value="$PROJECT_DIR$/manha_aula12/carro.py" />
         <option value="$PROJECT_DIR$/manha_aula12/testar_carro.py" />
+        <option value="$PROJECT_DIR$/manha_aula12/pacman-3.py" />
       </list>
     </option>
   </component>
@@ -143,12 +135,6 @@
               <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
               <item name="manha_aula12" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="djd-prog2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djd-prog2" type="462c0819:PsiDirectoryNode" />
-              <item name="manha_aula12" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -158,7 +144,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ads-poo/noite-aula10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manha_aula12" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,6 +165,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha_aula12" />
       <recent name="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha-aula11\pacman" />
       <recent name="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha-aula10" />
       <recent name="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha-aula9" />
@@ -203,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.testar_carro">
+  <component name="RunManager" selected="Python.pacman-3 (2)">
     <configuration name="modulo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -226,7 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pacman-3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pacman-3 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,12 +221,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha_aula12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula10/pacman-3.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\anton\git\fatec-2019-2s\djd-prog2\manha_aula12\pacman-4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,11 +303,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pacman-3 (2)" />
         <item itemvalue="Python.testar_carro" />
         <item itemvalue="Python.modulo1" />
         <item itemvalue="Python.teste_oo_1" />
         <item itemvalue="Python.pacman-3" />
-        <item itemvalue="Python.pacman-3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -357,12 +344,12 @@
       <workItem from="1571057750246" duration="8047000" />
       <workItem from="1571088377003" duration="15000" />
       <workItem from="1571489660281" duration="6000" />
-      <workItem from="1571489779118" duration="11498000" />
+      <workItem from="1571489779118" duration="13378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82404000" />
+    <option name="totallyTimeSpent" value="84284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -442,6 +429,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo.coverage" NAME="retangulo Coverage Results" MODIFIED="1569246940211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$janela.coverage" NAME="janela Coverage Results" MODIFIED="1569856324896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula9" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_lista.coverage" NAME="teste_lista Coverage Results" MODIFIED="1568643911831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_3__2_.coverage" NAME="pacman-3 (2) Coverage Results" MODIFIED="1571672606522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha_aula12" />
     <SUITE FILE_PATH="coverage/djd_prog2$conselheiro_21.coverage" NAME="conselheiro_21 Coverage Results" MODIFIED="1566832100180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
     <SUITE FILE_PATH="coverage/djd_prog2$numeros.coverage" NAME="numeros Coverage Results" MODIFIED="1568473988490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$event_teste.coverage" NAME="event-teste Coverage Results" MODIFIED="1570461412298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula10" />
@@ -477,13 +465,6 @@
     <SUITE FILE_PATH="coverage/djd_prog2$triangulo.coverage" NAME="triangulo Coverage Results" MODIFIED="1569073166386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/noite-aula2/aleatorio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/noite-aula3/temperatura.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -841,17 +822,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manha_aula12/edu/carro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manha_aula12/testar_carro.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha_aula12/edu/carro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manha_aula12/pacman-4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
