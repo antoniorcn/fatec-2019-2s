@@ -1,0 +1,22 @@
+package edu.curso.boundary;
+
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+
+public class PetBoundary implements BoundaryContent {
+	
+	@Override
+	public Pane boundaryContent() {
+		GridPane panConteudo = new GridPane();
+		panConteudo.add(new Label("Id"), 0, 0);
+		panConteudo.add(new TextField(), 1, 0);
+		panConteudo.add(new Label("Nome do Pet"), 0, 1);
+		panConteudo.add(new TextField(), 1, 1);
+		panConteudo.add(new Label("Nome do Dono"), 0, 2);
+		panConteudo.add(new TextField(), 1, 2);
+		return panConteudo;
+	}
+	
+}
