@@ -8,9 +8,11 @@
         var fantasmaLinha = 2
         var fantasmaColuna = 2
         var tamanho = 600 / 16
+        var angulo = 310
         function carga(e) {
             canvas = document.getElementById("canvas")
             ctx = canvas.getContext("2d")
+            // ctx.rotate(rad(10));
             console.log(canvas)
             console.log(ctx)
 
@@ -32,6 +34,10 @@
 
         function loopJogo() {
           // Calcular Regras
+          angulo += 1
+          if (angulo >= 360) {
+            angulo = 310
+          }
           // pacColuna += 0.01
           // Pintar
           pintarCenario()
@@ -64,6 +70,7 @@
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
           ]
+          ctx.beginPath()
           for (var linha = 0; linha < 16; linha++) {
             for (var coluna=0; coluna < 16; coluna++) {
               var x = coluna * tamanho
@@ -76,6 +83,7 @@
               ctx.fillRect(x, y, tamanho, tamanho)
             }
           }
+          ctx.stroke()
         }
 
         function pintarPacman(linha, coluna, tamanho) {
@@ -86,16 +94,16 @@
           var olhoX = px + parteX * 5
           var olhoY = py + parteY
           ctx.fillStyle="yellow"
+          //ctx.rotate(rad(45));
           ctx.beginPath()
           //ctx.moveTo(400, 300)
-          //ctx.lineTo(800, 0)
-          ctx.arc(px + tamanho / 2, py + tamanho / 2, tamanho / 2, rad(0), rad(330))
+          //ctx.lineTo(800, 0ctx.rotate(rad(90));
+          ctx.arc(px + tamanho / 2, py + tamanho / 2, tamanho / 2, rad(0), rad(angulo))
           ctx.lineTo(px + tamanho / 2, py + tamanho / 2)
           ctx.lineTo(px + tamanho, py + tamanho / 2)
           ctx.moveTo(px + tamanho / 2, py + tamanho / 2)
           ctx.fill()
           ctx.stroke()
-
           ctx.fillStyle = "black"
           ctx.beginPath()
           ctx.arc(olhoX, olhoY, parteX, rad(0), rad(360))
@@ -103,6 +111,7 @@
           ctx.fill()
           ctx.stroke()
         }
+
 
         function pintarFantasma(linha, coluna, tamanho, cor) {
           var px = coluna * tamanho
