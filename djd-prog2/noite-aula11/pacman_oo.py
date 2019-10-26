@@ -120,12 +120,33 @@ class Fantasma:
         tela.blit(self.img, (px, py))
 
 
+class Jogo:
+    def __init__(self):
+        self.lista_objetos = []
+
+    def adicionar(self, obj):
+        self.lista_objetos.append(obj)
+
+    def remover(self, obj):
+        self.lista_objetos.remove(obj)
+
+    def pintar(self, tela):
+        for obj in self.lista_objetos:
+            obj.pintar(tela)
+
+
 p = Pacman(20, AMARELO)
 cen = Cenario(20, p)
 blink = Fantasma(20, "./blinky.png")
 inky = Fantasma(20, "./inky.png")
 inky.coluna = 8
 inky.linha = 7
+
+jogo = Jogo()
+jogo.adicionar(cen)
+jogo.adicionar(p)
+jogo.adicionar(blink)
+jogo.adicionar(inky)
 # pinky = Fantasma(20, "./pinky.png")
 # red = Fantasma(20, "./red.png")
 
@@ -137,10 +158,7 @@ while True:
 
     # Pintar
     tela.fill(PRETO)
-    cen.pintar(tela)
-    p.pintar(tela)
-    blink.pintar(tela)
-    inky.pintar(tela)
+    jogo.pintar(tela)
     pygame.display.update()
 
     # Captura Eventos

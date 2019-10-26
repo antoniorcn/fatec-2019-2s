@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/noite-aula11/blinky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula11/inky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula11/pacman_oo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula10/pacman-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/noite-aula10/pacman-3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula11/pacman-1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula11/pacman-2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula11/pacman-3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/noite-aula11/pacman_oo.py" beforeDir="false" afterPath="$PROJECT_DIR$/noite-aula11/pacman_oo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +244,7 @@
       <workItem from="1571489660281" duration="6000" />
       <workItem from="1571489779118" duration="13378000" />
       <workItem from="1571738194772" duration="27000" />
-      <workItem from="1572096079971" duration="5753000" />
+      <workItem from="1572096079971" duration="6353000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -259,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572100572660</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Aula-11 PROG2 Noite Parte 2">
+      <created>1572104918748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572104918748</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +279,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aula-11 PROG2 Noite Parte 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula-11 PROG2 Noite Parte 1" />
+    <MESSAGE value="Aula-11 PROG2 Noite Parte 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula-11 PROG2 Noite Parte 2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djd_prog2$input_hiscore.coverage" NAME="input-hiscore Coverage Results" MODIFIED="1569079718527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
@@ -337,7 +339,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$numeros.coverage" NAME="numeros Coverage Results" MODIFIED="1568473988490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$bolinha.coverage" NAME="bolinha Coverage Results" MODIFIED="1570463100041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$ordenacao2.coverage" NAME="ordenacao2 Coverage Results" MODIFIED="1566832381170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
-    <SUITE FILE_PATH="coverage/djd_prog2$pacman_oo.coverage" NAME="pacman_oo Coverage Results" MODIFIED="1572104867299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula11" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_oo.coverage" NAME="pacman_oo Coverage Results" MODIFIED="1572105496197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula11" />
     <SUITE FILE_PATH="coverage/djd_prog2$tabuada__1_.coverage" NAME="tabuada (1) Coverage Results" MODIFIED="1568643677618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula6" />
   </component>
 </project>
