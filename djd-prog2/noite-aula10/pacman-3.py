@@ -88,12 +88,4 @@ while True:
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
             exit()
-        if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_RIGHT:
-                pacman_intencao_coluna += 1
-            elif e.key == pygame.K_LEFT:
-                pacman_intencao_coluna -= 1
-            elif e.key == pygame.K_DOWN:
-                pacman_intencao_linha += 1
-            elif e.key == pygame.K_UP:
-                pacman_intencao_linha -= 1
+
