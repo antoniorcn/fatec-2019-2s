@@ -1,0 +1,163 @@
+<html>
+  <head>
+      <script>
+        var canvas
+        var ctx
+        var pacLinha = 1
+        var pacColuna = 1
+        var fantasmaLinha = 2
+        var fantasmaColuna = 2
+        var tamanho = 600 / 16
+        function carga(e) {
+            canvas = document.getElementById("canvas")
+            ctx = canvas.getContext("2d")
+            console.log(canvas)
+            console.log(ctx)
+
+            window.setInterval(loopJogo, 10)
+            window.addEventListener("keydown", processaEventos)
+        }
+
+        function processaEventos( e ) {
+          if (e.key == "ArrowRight")  {
+            pacColuna += 1
+          } else if (e.key == "ArrowLeft")  {
+            pacColuna -= 1
+          } else if (e.key == "ArrowUp")  {
+            pacLinha -= 1
+          } else if (e.key == "ArrowDown")  {
+            pacLinha += 1
+          }
+        }
+
+        function loopJogo() {
+          // Calcular Regras
+          // pacColuna += 0.01
+          // Pintar
+          pintarCenario()
+          pintarPacman(pacLinha, pacColuna, tamanho)
+          pintarFantasma(fantasmaLinha, fantasmaColuna, tamanho, "red")
+
+          // Processar Eventos
+        }
+
+        function rad( angulo ) {
+          return angulo * Math.PI / 180.0
+        }
+
+        function pintarCenario() {
+          cenario = [
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            [2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 2, 2, 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+          ]
+          for (var linha = 0; linha < 16; linha++) {
+            for (var coluna=0; coluna < 16; coluna++) {
+              var x = coluna * tamanho
+              var y = linha * tamanho
+              cor = "black"
+              if (cenario[linha][coluna] == 2) {
+                  cor = "blue"
+              }
+              ctx.fillStyle = cor
+              ctx.fillRect(x, y, tamanho, tamanho)
+            }
+          }
+        }
+
+        function pintarPacman(linha, coluna, tamanho) {
+          var px = coluna * tamanho
+          var py = linha * tamanho
+          var parteX = tamanho / 8
+          var parteY = tamanho / 6
+          var olhoX = px + parteX * 5
+          var olhoY = py + parteY
+          ctx.fillStyle="yellow"
+          ctx.beginPath()
+          //ctx.moveTo(400, 300)
+          //ctx.lineTo(800, 0)
+          ctx.arc(px + tamanho / 2, py + tamanho / 2, tamanho / 2, rad(0), rad(330))
+          ctx.lineTo(px + tamanho / 2, py + tamanho / 2)
+          ctx.lineTo(px + tamanho, py + tamanho / 2)
+          ctx.moveTo(px + tamanho / 2, py + tamanho / 2)
+          ctx.fill()
+          ctx.stroke()
+
+          ctx.fillStyle = "black"
+          ctx.beginPath()
+          ctx.arc(olhoX, olhoY, parteX, rad(0), rad(360))
+          ctx.moveTo(olhoX, olhoY)
+          ctx.fill()
+          ctx.stroke()
+        }
+
+        function pintarFantasma(linha, coluna, tamanho, cor) {
+          var px = coluna * tamanho
+          var py = linha * tamanho
+          var parteX = tamanho / 8
+          var parteY = tamanho / 6
+          var olhoEX = px + parteX * 2.5
+          var olhoEY = py + parteY * 1.5
+          var olhoDX = px + parteX * 5.5
+          var olhoDY = py + parteY * 1.5
+          ctx.fillStyle = cor
+          ctx.beginPath()
+          ctx.moveTo(px, py + tamanho)
+          ctx.lineTo(px + parteX, py + 2 * parteY)
+          ctx.lineTo(px + 2 * parteX, py + 1 / 2 * parteY)
+          ctx.lineTo(px + 3 * parteX, py)
+          ctx.lineTo(px + 5 * parteX, py)
+          ctx.lineTo(px + 6 * parteX, py + 1 / 2 * parteY)
+          ctx.lineTo(px + 7 * parteX, py + 2 * parteY)
+          ctx.lineTo(px + tamanho, py + tamanho)
+          ctx.lineTo(px, py + tamanho)
+          ctx.fill()
+          ctx.stroke()
+
+          ctx.beginPath()
+          ctx.fillStyle = "white"
+          ctx.arc(olhoEX, olhoEY, parteX, 0, Math.PI * 2)
+          ctx.fill()
+          ctx.stroke()
+          ctx.beginPath()
+          ctx.fillStyle = "black"
+          ctx.arc(olhoEX, olhoEY, parteX / 2, 0, Math.PI * 2)
+          ctx.fill()
+          ctx.stroke()
+
+          ctx.beginPath()
+          ctx.fillStyle = "white"
+          ctx.arc(olhoDX, olhoDY, parteX, 0, Math.PI * 2)
+          ctx.fill()
+          ctx.stroke()
+          ctx.beginPath()
+          ctx.fillStyle = "black"
+          ctx.arc(olhoDX, olhoDY, parteX / 2, 0, Math.PI * 2)
+          ctx.fill()
+          ctx.stroke()
+        }
+
+        document.addEventListener("DOMContentLoaded", carga)
+
+      </script>
+  </head>
+
+  <body>
+    <h1>Jogo do Pacman</h1>
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </body>
+
+</html>
