@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula11/pacman_oo.py" beforeDir="false" afterPath="$PROJECT_DIR$/noite-aula11/pacman_oo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +243,9 @@
       <workItem from="1571489660281" duration="6000" />
       <workItem from="1571489779118" duration="13378000" />
       <workItem from="1571738194772" duration="27000" />
-      <workItem from="1572096079971" duration="6353000" />
+      <workItem from="1572096079971" duration="6898000" />
+      <workItem from="1572266005476" duration="381000" />
+      <workItem from="1572270603035" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572104918748</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aula-11 PROG2 Noite Parte 2">
+      <created>1572105537763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572105537763</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +279,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
