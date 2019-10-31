@@ -7,8 +7,9 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
 public class ClienteBoundary implements BoundaryContent{
-	public Pane generateForm() { 
-		GridPane panGrid = new GridPane();
+	private GridPane panGrid;
+	public ClienteBoundary() { 
+		panGrid = new GridPane();
 		panGrid.add(new Label("Id"), 0, 0);
 		panGrid.add(new TextField(), 1, 0);
 		panGrid.add(new Label("Nome do Cliente"), 0, 1);
@@ -17,6 +18,8 @@ public class ClienteBoundary implements BoundaryContent{
 		panGrid.add(new TextField(), 1, 2);
 		panGrid.add(new Button("Adicionar"), 0, 3);
 		panGrid.add(new Button("Pesquisar"), 1, 3);
+	}
+	public Pane generateForm() { 
 		return panGrid;
 	}
 }
