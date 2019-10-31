@@ -6,6 +6,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 2672143777.index
 3521868330.index
 1286792120.index
+3551624407.index
 1379176428.index
 701964647.index
 1850413669.index
@@ -28,6 +29,8 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 664422431.index
 2993511341.index
 2717849092.index
+1237277933.index
+2068864376.index
 3517238952.index
 3753028211.index
 3645781314.index
@@ -42,6 +45,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 1533803578.index
 628678625.index
 616844620.index
+207497823.index
 1011326448.index
 697342393.index
 3038988362.index
@@ -79,6 +83,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 784172893.index
 2226401294.index
 1664293418.index
+1558320484.index
 1341763796.index
 3002865041.index
 3195469144.index
@@ -104,6 +109,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 2284478341.index
 2970794161.index
 1574448086.index
+881836689.index
 1858871612.index
 1856919733.index
 2037832304.index
@@ -150,12 +156,14 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3207799785.index
 2076156752.index
 3402952382.index
+3137669433.index
 1383849485.index
 2474997009.index
 832448814.index
 721540582.index
 189810944.index
 639320603.index
+1326242939.index
 63242425.index
 3730403970.index
 3919147487.index
@@ -170,6 +178,8 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 2822129220.index
 310543075.index
 2299066528.index
+3304977839.index
+3872834457.index
 1977694223.index
 3787469602.index
 1886478569.index
@@ -181,13 +191,16 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 1085472081.index
 3111305121.index
 1140318695.index
+1197160998.index
 713120200.index
 3916968275.index
 836002032.index
 842373040.index
 1232778646.index
+35752512.index
 2330628614.index
 1916776822.index
+3165815928.index
 3306889058.index
 1064376649.index
 1612095428.index
@@ -214,6 +227,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3919672437.index
 3183749765.index
 2291220880.index
+3838653200.index
 2909919854.index
 3758240892.index
 2579429653.index
@@ -233,6 +247,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 2165103957.index
 576150263.index
 2583853927.index
+306457895.index
 2908856043.index
 36451314.index
 1074856167.index
@@ -250,6 +265,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 879284049.index
 1226378679.index
 1878434612.index
+3989392703.index
 3444957733.index
 2409285224.index
 547409372.index
@@ -257,6 +273,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3985753289.index
 305973655.index
 634532301.index
+130695293.index
 1224366681.index
 2058979960.index
 4007853931.index
@@ -268,6 +285,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 1633061442.index
 3937127781.index
 2692393090.index
+374649027.index
 109034848.index
 2064414565.index
 4093349866.index
@@ -283,6 +301,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 2819912143.index
 1736104663.index
 1300812255.index
+1562366079.index
 1404938841.index
 1644735368.index
 2495860443.index
@@ -314,6 +333,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 1365911744.index
 1559393469.index
 16225933.index
+2800297525.index
 8775960.index
 3232978478.index
 4221661827.index
