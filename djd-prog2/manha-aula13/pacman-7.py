@@ -18,6 +18,10 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600), 0)
 tamanho = int(600 / 30)
 
+font_big = pygame.font.SysFont("arial", 48, True, False)
+font_small = pygame.font.SysFont("arial", 18, True, False)
+
+
 class Cenario:
     def __init__(self, pac):
         self.cenario = [
@@ -53,6 +57,7 @@ class Cenario:
         ]
         self.pontos = 0
         self.pac = pac
+        self.fantasmas = []
 
     def desenhar(self, tela, tamanho):
         for linha, linha_conteudo in enumerate(self.cenario):
@@ -69,6 +74,13 @@ class Cenario:
                     ponto_y = int(y + tamanho / 2)
                     ponto_raio = int(tamanho / 10)
                     pygame.draw.circle(tela, AMARELO, (ponto_x, ponto_y), ponto_raio, 0)
+
+        vidas_img = font_small.render("Vidas: {:^5}".format(self.pac.vidas), True, AMARELO)
+        score_img = font_big.render("Score", True, AMARELO)
+        pontos_img = font_big.render("{:^5}".format(self.pontos), True, AMARELO)
+        tela.blit(score_img, (600, 100))
+        tela.blit(pontos_img, (600, 200))
+        tela.blit(vidas_img, (50, 580))
 
     def aprovar_movimento(self, personagem):
         aprovado = False
@@ -89,17 +101,30 @@ class Cenario:
                 self.pontos += 1
                 print(self.pontos)
                 self.cenario[self.pac.linha][self.pac.coluna] = 0
-
-
+        for fantasma in self.fantasmas:
+            self.aprovar_movimento(fantasma)
+            if self.pac.coluna == fantasma.coluna \
+                    and self.pac.linha == fantasma.linha:
+                self.pac.morrer()
 
 class Pacman:
     def __init__(self):
         self.linha = 17
         self.coluna = 15
+        self.vidas = 3
         self.intencao_linha = self.linha
         self.intencao_coluna = self.coluna
         self.abertura = 0
         self.vel_abertura = VELOCIDADE_BOCA
+
+    def morrer(self):
+        self.vidas -= 1
+        self.coluna = 15
+        self.linha = 17
+        self.intencao_coluna = self.coluna
+        self.intencao_linha = self.linha
+        if self.vidas <= 0:
+            print("Game Over")
 
     def desenhar(self, tela, tamanho):
         raio = int(tamanho / 2)
@@ -157,28 +182,19 @@ class Fantasma:
             self.ciclos = 0
 
     def desenhar(self, tela, tamanho):
+        img = pygame.transform.scale(self.image, (tamanho, tamanho))
         px = self.coluna * tamanho
         py = self.linha * tamanho
-        w = tamanho // 8
-        h = tamanho // 6
+        tela.blit(img, (px, py))
 
-        lista = [(px, py + tamanho),
-                 (px + w, py + 2 * h),
-                 (px + 2 * w, py + h // 2),
-                 (px + 3 * w, py),
-                 (px + 5 * w, py),
-                 (px + 6 * w, py + h // 2),
-                 (px + 7 * w, py + 2 * h),
-                 (px + tamanho, py + tamanho)
-                 ]
-        pygame.draw.polygon(tela, self.cor, lista, 0)
 
-clyde = Fantasma(LARANJA)
-inky = Fantasma(VERMELHO)
-pinky = Fantasma(ROSA)
-blinky = Fantasma(AZUL)
+clyde = Fantasma("clyde.png")
+inky = Fantasma("inky.png")
+pinky = Fantasma("pinky.png")
+blinky = Fantasma("blinky.png")
 pacman = Pacman()
 cenario = Cenario(pacman)
+cenario.fantasmas.extend([clyde, inky, pinky, blinky])
 
 while True:
     # Calcular Regras
@@ -187,12 +203,6 @@ while True:
     inky.mover()
     blinky.mover()
     clyde.mover()
-    cenario.aprovar_movimento(pinky)
-    cenario.aprovar_movimento(inky)
-    cenario.aprovar_movimento(blinky)
-    cenario.aprovar_movimento(clyde)
-
-    # clyde.fantasma_coluna += random() - 0.4
 
     # Desenha tela
     screen.fill(PRETO)
