@@ -16,7 +16,7 @@ DIREITA = 1
 
 pygame.init()
 screen = pygame.display.set_mode((800, 600), 0)
-tamanho = int(600 / 16)
+tamanho = int(600 / 30)
 
 class Cenario:
     def __init__(self, pac):
@@ -37,7 +37,7 @@ class Cenario:
             [2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 2, 0, 0, 0, 0, 0, 0, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 2],
             [2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 0, 0, 0, 0, 0, 0, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2],
             [2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 2, 0, 0, 0, 0, 0, 0, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 2],
-            [2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 0, 0, 0, 0, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 2],
+            [2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 2],
             [2, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2],
             [2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2],
             [2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2],
@@ -49,7 +49,7 @@ class Cenario:
             [2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2],
             [2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2],
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
-            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
         ]
         self.pontos = 0
         self.pac = pac
@@ -72,7 +72,8 @@ class Cenario:
 
     def aprovar_movimento(self, personagem):
         aprovado = False
-        if 0 <= personagem.intencao_linha < 16 and 0 <= personagem.intencao_coluna < 16 \
+        if 0 <= personagem.intencao_linha < len(self.cenario) \
+                and 0 <= personagem.intencao_coluna < len(self.cenario[0]) \
                 and self.cenario[personagem.intencao_linha][personagem.intencao_coluna] != 2:
             personagem.linha = personagem.intencao_linha
             personagem.coluna = personagem.intencao_coluna
@@ -93,8 +94,8 @@ class Cenario:
 
 class Pacman:
     def __init__(self):
-        self.linha = 2
-        self.coluna = 5
+        self.linha = 17
+        self.coluna = 15
         self.intencao_linha = self.linha
         self.intencao_coluna = self.coluna
         self.abertura = 0
@@ -122,13 +123,13 @@ class Pacman:
 
 
 class Fantasma:
-    def __init__(self, cor):
+    def __init__(self, cor, linha=14, coluna=13):
         self.cor = cor
-        self.coluna = 6
-        self.linha = 4
+        self.coluna = coluna
+        self.linha = linha
         self.intencao_linha = self.linha
         self.intencao_coluna = self.coluna
-        self.delay = 30
+        self.delay = 20
         self.ciclos = 0
         self.passo = 0
         self.direcao = 0

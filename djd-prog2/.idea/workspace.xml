@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="Aula-11 PROG2 Noite Parte 2">
-      <change afterPath="$PROJECT_DIR$/manha-aula13/pacman-5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula13/pacman-6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/edu/carro.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/edu/carro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/edu/modulo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/edu/modulo2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/modulo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/modulo1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/pacman-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/pacman-4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/pacman.png" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/pacman.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/testar_carro.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/testar_carro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha_aula12/teste_oo_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula12/teste_oo_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha-aula13/pacman-5.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula13/pacman-5.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,14 +18,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>0,</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>1,</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -95,29 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pacman-5">
-    <configuration name="pacman-3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="djd-prog2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noite-aula10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noite-aula10/pacman-3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.pacman-6">
     <configuration name="pacman-4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,6 +118,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula13/pacman-5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pacman-6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="djd-prog2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula13" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula13/pacman-6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pacman-6" />
         <item itemvalue="Python.pacman-5" />
         <item itemvalue="Python.pacman-4" />
         <item itemvalue="Python.pacman_oo" />
         <item itemvalue="Python.teste_carro_oo" />
-        <item itemvalue="Python.pacman-3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +240,7 @@
       <workItem from="1572096079971" duration="6898000" />
       <workItem from="1572266005476" duration="381000" />
       <workItem from="1572270603035" duration="11000" />
-      <workItem from="1572871825014" duration="2155000" />
+      <workItem from="1572871825014" duration="4274000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -313,6 +299,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$testar_carro.coverage" NAME="testar_carro Coverage Results" MODIFIED="1571670609458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha_aula12" />
     <SUITE FILE_PATH="coverage/djd_prog2$lista_3.coverage" NAME="lista-3 Coverage Results" MODIFIED="1569252417423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo.coverage" NAME="retangulo Coverage Results" MODIFIED="1569246940211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_6.coverage" NAME="pacman-6 Coverage Results" MODIFIED="1572876119658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula13" />
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_3__1_.coverage" NAME="pacman-3 (1) Coverage Results" MODIFIED="1572096812877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_3.coverage" NAME="pacman-3 Coverage Results" MODIFIED="1571663394630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula11/pacman" />
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_3__2_.coverage" NAME="pacman-3 (2) Coverage Results" MODIFIED="1571672606522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha_aula12" />
@@ -356,7 +343,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$hi_score_for.coverage" NAME="hi-score-for Coverage Results" MODIFIED="1569079019515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$teste_find.coverage" NAME="teste_find Coverage Results" MODIFIED="1565623270312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1565621138526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
-    <SUITE FILE_PATH="coverage/djd_prog2$pacman_5.coverage" NAME="pacman-5 Coverage Results" MODIFIED="1572873992901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula13" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pacman_5.coverage" NAME="pacman-5 Coverage Results" MODIFIED="1572875859585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula13" />
     <SUITE FILE_PATH="coverage/djd_prog2$numeros.coverage" NAME="numeros Coverage Results" MODIFIED="1568473988490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula3" />
     <SUITE FILE_PATH="coverage/djd_prog2$bolinha.coverage" NAME="bolinha Coverage Results" MODIFIED="1570463100041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$ordenacao2.coverage" NAME="ordenacao2 Coverage Results" MODIFIED="1566832381170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
