@@ -1,22 +1,25 @@
 package edu.curso.controller;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+
+import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 
 import edu.curso.entidade.Brinquedo;
 import edu.curso.repository.BrinquedoRepository;
 
 @Controller
 public class BrinquedoController {
+	
+	@Resource(name = "userInfo")
+	Usuario u;
 	
 	@Autowired 
 	BrinquedoRepository brinquedoRepository;
@@ -31,6 +34,27 @@ public class BrinquedoController {
 		 categorias.add("Jogos de tauleiro");
 		 categorias.add("Jogos eletrônicos");
 		 return categorias;
+	}
+	
+	@RequestMapping("/login")
+	public ModelAndView login() { 
+		System.out.printf("Usuario atual %s\n", u.getUser());
+		ModelAndView mv = new ModelAndView("login");
+		return mv;
+	}
+	
+	@RequestMapping("/loginController")
+	public ModelAndView loginProcess(@RequestParam("username") String user,
+			@RequestParam("password") String pass) {
+		String page = "error";
+		if("admin".equals(user) && "pass".equals(pass)) { 
+			page = "principal";
+			u.setUser(user);
+			u.setPass(pass);
+			u.setProfile("admin");
+		}
+		ModelAndView model = new ModelAndView(page);
+		return model;
 	}
 	
 	

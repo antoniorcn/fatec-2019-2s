@@ -21,11 +21,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(AuthenticationManagerBuilder auth) {
 		try {
 			auth.inMemoryAuthentication()
-			.withUser("user1").password(passwordEncoder().encode("user1Pass")).roles("USER")
+			.withUser("user1")
+			.password(passwordEncoder().encode("user1Pass"))
+			.roles("USER")
 			.and()
-			.withUser("user2").password(passwordEncoder().encode("user2Pass")).roles("USER")
+			.withUser("user2")
+			.password(passwordEncoder().encode("user2Pass"))
+			.roles("USER")
 			.and()
-			.withUser("admin").password(passwordEncoder().encode("adminPass")).roles("ADMIN");
+			.withUser("admin")
+			.password(passwordEncoder().encode("adminPass"))
+			.roles("ADMIN");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
