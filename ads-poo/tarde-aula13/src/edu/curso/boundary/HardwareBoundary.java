@@ -1,15 +1,21 @@
 package edu.curso.boundary;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 import edu.curso.control.HardwareControl;
 import edu.curso.entidades.Hardware;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -27,11 +33,11 @@ public class HardwareBoundary extends Application implements EventHandler<Action
 	private TextField txtTipo = new TextField();
 	private TextField txtFabricante = new TextField();
 	private TextField txtPreco = new TextField();
-	private TextField txtDataCompra = new TextField();
+	private DatePicker dtpDataCompra = new DatePicker();
 	private TextField txtDescricao = new TextField();
 	private Button btnAdicionar = new Button("Adicionar");
 	private Button btnPesquisar = new Button("Pesquisar");
-	private TableView table = new TableView();
+	private TableView<Hardware> table = new TableView<>();
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	@Override
@@ -59,7 +65,7 @@ public class HardwareBoundary extends Application implements EventHandler<Action
 		painelCampos.add(new Label("Preço"), 0, 3);
 		painelCampos.add(txtPreco, 1, 3);
 		painelCampos.add(new Label("Data Compra"), 0, 4);
-		painelCampos.add(txtDataCompra, 1, 4);
+		painelCampos.add(dtpDataCompra, 1, 4);
 		painelCampos.add(new Label("Descricao"), 0, 5);
 		painelCampos.add(txtDescricao, 1, 5);
 		
@@ -69,6 +75,14 @@ public class HardwareBoundary extends Application implements EventHandler<Action
 		
 		btnAdicionar.addEventHandler(ActionEvent.ANY, this);
 		btnPesquisar.addEventHandler(ActionEvent.ANY, this);
+		table.getSelectionModel().selectedItemProperty().addListener(
+				new ChangeListener<Hardware>() {
+					@Override
+					public void changed(ObservableValue<? extends Hardware> observable, Hardware oldValue,
+							Hardware newValue) {
+						entidadeParaBoundary(newValue);
+					}
+				});
 		painelBotoes.setHgap(15);
 		Scene scn = new Scene(painelPrincipal, 400, 200);
 		
@@ -102,7 +116,13 @@ public class HardwareBoundary extends Application implements EventHandler<Action
 			h.setDescricao(txtDescricao.getText());
 			h.setId(Long.parseLong(txtId.getText()));
 			h.setPreco(Double.parseDouble(txtPreco.getText()));
-			Date d = sdf.parse(txtDataCompra.getText());
+			LocalDate dt = dtpDataCompra.getValue();
+			Date d = Date.from(dt.atStartOfDay()
+				      .atZone(ZoneId.systemDefault())
+				      .toInstant());
+			// String dtTexto = 
+			//		dt.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+			// Date d = sdf.parse(dtTexto);
 			h.setDataCompra(d);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -117,8 +137,13 @@ public class HardwareBoundary extends Application implements EventHandler<Action
 			txtDescricao.setText(h.getDescricao());
 			txtId.setText(String.valueOf(h.getId()));
 			txtPreco.setText(String.valueOf(h.getPreco()));
-			String strData = sdf.format(h.getDataCompra());
-			txtDataCompra.setText(strData);
+			// String strData = sdf.format(h.getDataCompra());
+			// dtpDataCompra.setText(strData);
+			
+			LocalDate dt = h.getDataCompra().toInstant()
+		      .atZone(ZoneId.systemDefault())
+		      .toLocalDate();
+			dtpDataCompra.setValue(dt);
 		}
 	}
 	
@@ -130,6 +155,8 @@ public class HardwareBoundary extends Application implements EventHandler<Action
 			String tipo = txtTipo.getText();
 			Hardware h = control.pesquisarPorTipo(tipo);			
 			entidadeParaBoundary(h);
+		} else if (event.getTarget() == table) { 
+			System.out.println(table.getSelectionModel().getSelectedIndex());
 		}
 	}
 	

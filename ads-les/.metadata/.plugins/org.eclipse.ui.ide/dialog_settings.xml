@@ -17,4 +17,11 @@
 			<item value=""/>
 		</list>
 	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="433"/>
+		<item key="DIALOG_Y_ORIGIN" value="96"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="TOGGLE_SELECTED" value="true"/>
+	</section>
 </section>

@@ -33,6 +33,7 @@
 		<item key="SynchronizedModifier" value="false"/>
 		<item key="Comments" value="false"/>
 		<item key="VisibilityModifier" value="1"/>
+		<item key="InsertPosition.v2" value="2"/>
 	</section>
 	<section name="DialogBounds_OverrideMethodDialog">
 		<item key="DIALOG_X_ORIGIN" value="428"/>

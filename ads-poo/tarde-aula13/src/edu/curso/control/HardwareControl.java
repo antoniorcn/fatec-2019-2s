@@ -17,7 +17,7 @@ public class HardwareControl {
 	private static final String SENHA = "";
 	
 	public void adicionar(Hardware h) { 
-		// getLista().add(h);
+		getLista().add(h);
 		try {
 			Connection con = 
 				DriverManager.getConnection(URL, USUARIO, SENHA);				
