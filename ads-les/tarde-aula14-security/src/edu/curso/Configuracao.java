@@ -7,23 +7,24 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.stereotype.Component;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
@@ -37,28 +38,44 @@ import org.thymeleaf.templatemode.TemplateMode;
 public class Configuracao implements WebMvcConfigurer{
 	@Autowired
 	ApplicationContext appContext;
-	
+
+	@Bean("messageSource")
+	public MessageSource messageSource() {
+		ReloadableResourceBundleMessageSource messageSource = 
+				new ReloadableResourceBundleMessageSource();
+		messageSource.setBasename("classpath:messages");
+		messageSource.setDefaultEncoding("UTF-8");
+		messageSource.setUseCodeAsDefaultMessage(true);
+		return messageSource;
+	}
+
+	@Bean
+	public LocaleResolver localeResolver() {
+		CookieLocaleResolver localeResolver = new CookieLocaleResolver();
+		return localeResolver;
+	}
+
 	@Bean
 	public DataSource dataSource() {
-	try {
+		try {
 			DriverManagerDataSource dataSource = new DriverManagerDataSource();
 			dataSource.setDriverClassName("org.mariadb.jdbc.Driver");
 			dataSource.setUsername("root");
 			dataSource.setPassword("");
 			dataSource.setUrl(
-				"jdbc:mariadb://localhost/brinquedodb?createDatabaseIfNotExist=true"); 
+					"jdbc:mariadb://localhost/brinquedodb?createDatabaseIfNotExist=true"); 
 			return dataSource;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}
 	}
-	
+
 	@Bean
 	public Properties hibernateProperties() {
 		Properties hibernateProp = new Properties();
 		hibernateProp.put("hibernate.dialect", 
-			"org.hibernate.dialect.MariaDB53Dialect");
+				"org.hibernate.dialect.MariaDB53Dialect");
 		hibernateProp.put("hibernate.hbm2ddl.auto", "update");
 		hibernateProp.put("hibernate.format_sql", false);
 		hibernateProp.put("hibernate.use_sql_comments", true);
@@ -68,17 +85,17 @@ public class Configuracao implements WebMvcConfigurer{
 		hibernateProp.put("hibernate.jdbc.fetch_size", 50);
 		return hibernateProp;
 	}
-	
+
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter() {
 		return new HibernateJpaVendorAdapter();
 	}
 
-	
+
 	@Bean
 	public EntityManagerFactory entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean factoryBean =
-			new LocalContainerEntityManagerFactoryBean();
+				new LocalContainerEntityManagerFactoryBean();
 		factoryBean.setPackagesToScan("edu.curso.entidade");
 		factoryBean.setDataSource(dataSource());
 		factoryBean.setJpaProperties(hibernateProperties());
@@ -105,7 +122,7 @@ public class Configuracao implements WebMvcConfigurer{
 		SpringTemplateEngine templateEngine = new SpringTemplateEngine();
 		templateEngine.setTemplateResolver(tr);
 		templateEngine.setEnableSpringELCompiler(true);
-		
+
 		ThymeleafViewResolver resolver = new ThymeleafViewResolver();
 		resolver.setTemplateEngine(templateEngine);
 		registry.viewResolver(resolver);
