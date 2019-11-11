@@ -51,13 +51,18 @@ class Inimigo(pygame.sprite.Sprite):
         size = (51, 110)
         self.y_vel = 0
         self.x_vel = 0
+        self.atualizar = 5
+        self.atualizar_count = 0
         self.image = pygame.transform.scale(img, size)
         self.rect = pygame.Rect((0, 0), size)
 
     def update(self, *args):
-        self.y_vel += args[0]
-        self.rect.y += (self.y_vel / args[1])
-        self.rect.x += self.x_vel
+        self.atualizar_count += 1
+        if self.atualizar_count >= self.atualizar:
+            self.y_vel += args[0]
+            self.rect.y += (self.y_vel / args[1])
+            self.rect.x += self.x_vel
+            self.atualizar_count = 0
 
 
 class Tiro(pygame.sprite.Sprite):
@@ -141,7 +146,7 @@ while True:
     pygame.draw.rect(tela, AMARELO, pygame.Rect((20, 20), (200, 20)), 5)
     pygame.display.update()
 
-    pygame.time.delay(50)
+    pygame.time.delay(10)
 
     # Eventos
     eventos = pygame.event.get()
