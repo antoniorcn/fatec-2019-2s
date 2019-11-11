@@ -2,6 +2,8 @@ import pygame
 import random
 
 
+ESTADO = "menu"
+
 class Personagem(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -84,9 +86,10 @@ AMARELO = (255, 255, 0)
 VERMELHO = (255, 0, 0)
 pygame.init()
 tela = pygame.display.set_mode((800, 600), 0)
+fonte = pygame.font.SysFont("arial", 48, True, False)
 fator = 10.0
 gravidade = 9.8
-
+barra_x = 200
 
 capitao = Personagem()
 piso = Piso()
@@ -110,8 +113,16 @@ def criar_coelho():
 criar_coelho()
 criar_coelho()
 
-while True:
-    # Calcular Regras
+img_iniciar = fonte.render("Iniciar", True, AMARELO)
+rect_iniciar = img_iniciar.get_rect()
+rect_iniciar.move_ip(200, 200)
+img_sair = fonte.render("Sair", True, AMARELO)
+rect_sair = img_sair.get_rect()
+rect_sair.move_ip(200, 400)
+
+
+
+def jogando_calcular_regras():
     herois.update(gravidade, fator)
     inimigos.update(gravidade, fator)
     tiros.update(gravidade, fator)
@@ -135,22 +146,57 @@ while True:
         if t.rect.x > 800:
             t.kill()
 
-    # Desenhar
-    tela.fill(PRETO)
-    herois.draw(tela)
-    tiros.draw(tela)
-    plataformas.draw(tela)
-    pygame.draw.rect(tela, VERMELHO, piso.rect, 5)
-    inimigos.draw(tela)
-    pygame.draw.rect(tela, VERMELHO, pygame.Rect((20, 20), (barra_x, 20)), 0)
-    pygame.draw.rect(tela, AMARELO, pygame.Rect((20, 20), (200, 20)), 5)
-    pygame.display.update()
+while True:
+    # Calcular Regras
+    if ESTADO == "jogando":
+        jogando_calcular_regras()
+    elif ESTADO == "menu":
+        pass
+        # menu_calcular_regras()
 
-    pygame.time.delay(10)
+    if ESTADO == "jogando":
+        # Desenhar
+        tela.fill(PRETO)
+        herois.draw(tela)
+        tiros.draw(tela)
+        plataformas.draw(tela)
+        pygame.draw.rect(tela, VERMELHO, piso.rect, 5)
+        inimigos.draw(tela)
+        pygame.draw.rect(tela, VERMELHO, pygame.Rect((20, 20), (barra_x, 20)), 0)
+        pygame.draw.rect(tela, AMARELO, pygame.Rect((20, 20), (200, 20)), 5)
+        pygame.display.update()
+        pygame.time.delay(10)
+    elif ESTADO == "menu":
+        tela.fill(PRETO)
+        tela.blit(img_iniciar, rect_iniciar.topleft)
+        tela.blit(img_sair, rect_sair.topleft)
+        pygame.display.update()
 
     # Eventos
     eventos = pygame.event.get()
-    capitao.processa_eventos(eventos)
-    for e in eventos:
-        if e.type == pygame.QUIT:
-            exit()
+    if ESTADO == "jogando":
+        capitao.processa_eventos(eventos)
+        for e in eventos:
+            if e.type == pygame.KEYDOWN:
+                if e.key == pygame.K_p:
+                    ESTADO = "pausado"
+                elif e.key == pygame.K_ESCAPE:
+                    ESTADO = "menu"
+            if e.type == pygame.QUIT:
+                exit()
+    elif ESTADO == "pausado":
+        for e in eventos:
+            if e.type == pygame.QUIT:
+                exit()
+            if e.type == pygame.KEYDOWN:
+                if e.key == pygame.K_p:
+                    ESTADO = "jogando"
+    elif ESTADO == "menu":
+        for e in eventos:
+            if e.type == pygame.QUIT:
+                exit()
+            elif e.type == pygame.MOUSEBUTTONDOWN:
+                if rect_iniciar.collidepoint(e.pos):
+                    ESTADO = "jogando"
+                elif rect_sair.collidepoint(e.pos):
+                    exit()
