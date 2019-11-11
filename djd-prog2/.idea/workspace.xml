@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="Aula-11 PROG2 Noite Parte 2">
-      <change afterPath="$PROJECT_DIR$/manha-aula14/capitao_nasc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula14/piso.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula14/pulo-sprite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/clouds_BG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/clouds_MG_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/clouds_MG_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/clouds_MG_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/mountains.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/pacman_sprites.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/parallax e pulo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noite-aula12/sky.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula14/coelho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula14/projetil.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manha-aula13/pulo.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula13/pulo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noite-aula12/pacman_oo.py" beforeDir="false" afterPath="$PROJECT_DIR$/noite-aula12/pacman_oo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha-aula14/pulo-sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula14/pulo-sprite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +244,7 @@
       <workItem from="1572270603035" duration="11000" />
       <workItem from="1572871825014" duration="8980000" />
       <workItem from="1573302251777" duration="11218000" />
-      <workItem from="1573477105700" duration="2239000" />
+      <workItem from="1573477105700" duration="4270000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -344,7 +334,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$triangulo.coverage" NAME="triangulo Coverage Results" MODIFIED="1569073166386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_float.coverage" NAME="variaveis_float Coverage Results" MODIFIED="1565622225467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$event_teste.coverage" NAME="event-teste Coverage Results" MODIFIED="1570461412298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula10" />
-    <SUITE FILE_PATH="coverage/djd_prog2$pulo_sprite.coverage" NAME="pulo-sprite Coverage Results" MODIFIED="1573479330138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula14" />
+    <SUITE FILE_PATH="coverage/djd_prog2$pulo_sprite.coverage" NAME="pulo-sprite Coverage Results" MODIFIED="1573481397124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula14" />
     <SUITE FILE_PATH="coverage/djd_prog2$variaveis_str.coverage" NAME="variaveis_str Coverage Results" MODIFIED="1565622539205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha/aula2" />
     <SUITE FILE_PATH="coverage/djd_prog2$ordenacao3.coverage" NAME="ordenacao3 Coverage Results" MODIFIED="1567263933299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula4" />
     <SUITE FILE_PATH="coverage/djd_prog2$draw_teste.coverage" NAME="draw-teste Coverage Results" MODIFIED="1570457738740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula10" />
