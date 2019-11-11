@@ -8,8 +8,9 @@ AZUL = (0, 0, 255)
 tela = pygame.display.set_mode((800, 600), 0)
 
 
-class Pacman:
+class Pacman(pygame.sprite.Sprite):
     def __init__(self, tamanho, c):
+        pygame.sprite.Sprite.__init__(self)
         self.tamanho = tamanho
         self.cor = c
         self.raio = self.tamanho // 2
@@ -18,20 +19,25 @@ class Pacman:
         self.linha = 1
         self.coluna_intencao = self.coluna
         self.linha_intencao = self.linha
+        self.image = pygame.Surface((tamanho, tamanho), 0)
+        self.rect = pygame.Rect((0, 0), (tamanho, tamanho))
+        self.criar_imagem()
 
-    def pintar(self, tela):
-        px = self.coluna * self.tamanho + self.raio
-        py = self.linha * self.tamanho + self.raio
+    def criar_imagem(self):
+        # px = self.coluna * self.tamanho + self.raio
+        # py = self.linha * self.tamanho + self.raio
+        px = self.tamanho // 2
+        py = self.tamanho // 2
         centro = (px, py)
-        labio_superior = (px + self.raio, py - self.raio)
-        labio_inferior = (px + self.raio, py + self.raio)
-        pygame.draw.circle(tela, self.cor, (px, py), self.raio, 0)
+        labio_superior = (px + self.raio, py - self.abertura_boca)
+        labio_inferior = (px + self.raio, py + self.abertura_boca)
+        pygame.draw.circle(self.image, self.cor, (px, py), self.raio, 0)
         lista = [centro, labio_superior, labio_inferior]
-        pygame.draw.polygon(tela, PRETO, lista, 0)
+        pygame.draw.polygon(self.image, PRETO, lista, 0)
 
         olho_x = px + self.raio // 5
         olho_y = py - self.raio // 2
-        pygame.draw.circle(tela, PRETO, (olho_x, olho_y),
+        pygame.draw.circle(self.image, PRETO, (olho_x, olho_y),
                            self.raio // 5, 0)
 
     def processar_eventos(self, eventos):
@@ -54,8 +60,13 @@ class Pacman:
         self.coluna_intencao = self.coluna
         self.linha_intencao = self.linha
 
-    def calcular_regras(self):
-        pass
+    def update(self):
+        self.rect.x = self.coluna * self.tamanho
+        self.rect.y = self.linha * self.tamanho
+        self.abertura_boca += 1
+        if self.abertura_boca > self.raio:
+            self.abertura_boca = 0
+        self.criar_imagem()
 
 class Cenario:
     def __init__(self, tamanho, pac):
@@ -128,13 +139,14 @@ class Cenario:
                 self.cenario[self.pacman.linha][self.pacman.coluna] = 0
 
 
-class Fantasma:
+class Fantasma(pygame.sprite.Sprite):
     ACIMA = 0
     ABAIXO = 2
     ESQUERDA = 3
     DIREITA = 1
 
     def __init__(self, tamanho, imagem):
+        pygame.sprite.Sprite.__init__(self)
         self.coluna = 5
         self.linha = 4
         self.tamanho = tamanho
@@ -148,12 +160,8 @@ class Fantasma:
         self.lerdeza = 5
         self.contador_lerdeza = 0
         imagem_fantasma = pygame.image.load(imagem)
-        self.img = pygame.transform.scale(imagem_fantasma, (self.tamanho, self.tamanho))
-
-    def pintar(self, tela):
-        px = self.coluna * self.tamanho
-        py = self.linha * self.tamanho
-        tela.blit(self.img, (px, py))
+        self.image = pygame.transform.scale(imagem_fantasma, (self.tamanho, self.tamanho))
+        self.rect = pygame.Rect((0, 0), (tamanho, tamanho))
 
     def escolher_destino(self):
         self.direcao = randint(0, 3)
@@ -169,7 +177,9 @@ class Fantasma:
         self.linha_intencao = self.linha
         self.escolher_destino()
 
-    def calcular_regras(self):
+    def update(self):
+        self.rect.x = self.coluna * self.tamanho
+        self.rect.y = self.linha * self.tamanho
         self.contador_lerdeza += 1
         if self.contador_lerdeza >= self.lerdeza:
             if self.direcao == self.ACIMA:
@@ -186,26 +196,11 @@ class Fantasma:
             self.contador_lerdeza = 0
 
 
-class Jogo:
-    def __init__(self):
-        self.lista_objetos = []
-
-    def adicionar(self, obj):
-        self.lista_objetos.append(obj)
-
-    def remover(self, obj):
-        self.lista_objetos.remove(obj)
-
-    def pintar(self, tela):
-        for obj in self.lista_objetos:
-            obj.pintar(tela)
-
-    def calcular_regras(self):
-        for objeto in self.lista_objetos:
-            objeto.calcular_regras()
-
-
+grupo_pac = pygame.sprite.Group()
 p = Pacman(20, AMARELO)
+
+p.add(grupo_pac)
+
 cen = Cenario(20, p)
 blinky = Fantasma(20, "./blinky.png")
 blinky.lerdeza = 2
@@ -224,13 +219,11 @@ cen.personagens.append(clyde)
 cen.personagens.append(pinky)
 cen.personagens.append(p)
 
-jogo = Jogo()
-jogo.adicionar(cen)
-jogo.adicionar(p)
-jogo.adicionar(blinky)
-jogo.adicionar(inky)
-jogo.adicionar(clyde)
-jogo.adicionar(pinky)
+grupo_fantasmas = pygame.sprite.Group()
+grupo_fantasmas.add(clyde)
+grupo_fantasmas.add(pinky)
+grupo_fantasmas.add(inky)
+grupo_fantasmas.add(blinky)
 
 FPS = 30
 # pinky = Fantasma(20, "./pinky.png")
@@ -243,11 +236,16 @@ clk = pygame.time.Clock()
 while True:
     # Calcular Regras
     cen.calcular_regras()
-    jogo.calcular_regras()
+    grupo_fantasmas.update()
+    grupo_pac.update()
+
+    pygame.sprite.spritecollide(p, grupo_fantasmas, True)
 
     # Pintar
     tela.fill(PRETO)
-    jogo.pintar(tela)
+    cen.pintar(tela)
+    grupo_fantasmas.draw(tela)
+    grupo_pac.draw(tela)
     pygame.display.update()
 
     # pygame.time.delay(1000 // FPS)

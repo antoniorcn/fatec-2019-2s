@@ -33,9 +33,9 @@ while True:
     if piso.contains(personagem):
         y_vel *= -1
 
-    corte += 1
-    if corte > 100:
-        corte = 100
+    corte += 3
+    # if corte > 100:
+    #    corte = 100
 
     # Desenhar
     tela.fill(PRETO)
