@@ -1,6 +1,15 @@
 package edu.curso;
 
+import java.io.IOException;
+import java.net.FileNameMap;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.net.URLConnection;
+import java.util.Locale;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -12,6 +21,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.core.io.Resource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -22,8 +33,10 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.handler.AbstractHandlerMapping;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
@@ -36,27 +49,54 @@ import org.thymeleaf.templatemode.TemplateMode;
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = {"edu.curso.repository"})
 public class Configuracao implements WebMvcConfigurer{
+	
+	
 	@Autowired
 	ApplicationContext appContext;
+	
+	public Configuracao() { 
+		URL url = Configuracao.class.getClassLoader().getResource("/resources/");
+		System.out.println("Path: " + url.getFile());
+	}
+	
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		System.out.println("Add Resource Handlers iniciado");
+	    // TODO Auto-generated method stub
+	    registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+	   
+	}   
 
 	@Bean("messageSource")
 	public MessageSource messageSource() {
-		ReloadableResourceBundleMessageSource messageSource = 
-				new ReloadableResourceBundleMessageSource();
-		messageSource.setBasename("classpath:messages");
-		messageSource.setDefaultEncoding("UTF-8");
-		messageSource.setUseCodeAsDefaultMessage(true);
-		return messageSource;
+		System.out.println("Message Source iniciado");
+		ResourceBundleMessageSource messageSource
+	      = new ResourceBundleMessageSource ();
+	    messageSource.setBasenames("classpath:/resources/messages");
+	    messageSource.setDefaultEncoding("UTF-8");
+//	    Resource cproot =
+//	    	    appContext.getResource("classpath:/resources/messages.properties");
+//	    try {
+//			System.out.println(cproot.getFile().getAbsolutePath());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+	    return messageSource;
 	}
 
 	@Bean
 	public LocaleResolver localeResolver() {
+		System.out.println("Locale Resolver iniciado");
 		CookieLocaleResolver localeResolver = new CookieLocaleResolver();
+		localeResolver.setDefaultLocale(Locale.US);
+		MessageService.getInstance().setApplicationContext(appContext);
+	    System.out.println(MessageService.getInstance().getMessage("user", "User Name Default:"));
 		return localeResolver;
 	}
 
 	@Bean
 	public DataSource dataSource() {
+		System.out.println("Data Source iniciado");
 		try {
 			DriverManagerDataSource dataSource = new DriverManagerDataSource();
 			dataSource.setDriverClassName("org.mariadb.jdbc.Driver");
