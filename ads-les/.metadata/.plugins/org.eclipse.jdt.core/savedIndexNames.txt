@@ -32,7 +32,9 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 858000786.index
 4127640144.index
 2355314221.index
+3792054948.index
 2674602203.index
+1257105404.index
 134688393.index
 3935832909.index
 2697259513.index
@@ -45,6 +47,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3827570383.index
 1085472081.index
 121341364.index
+2802937108.index
 163702538.index
 2108286793.index
 2526500159.index
@@ -65,6 +68,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 2058979960.index
 2602350232.index
 918018392.index
+1277195229.index
 2400749730.index
 1589219017.index
 3673924734.index
@@ -84,6 +88,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3531522114.index
 42437648.index
 1605499153.index
+286747896.index
 1238438496.index
 2909919854.index
 739568013.index
@@ -199,6 +204,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 624862652.index
 109034848.index
 2819912143.index
+2779421411.index
 814734235.index
 260564723.index
 3088001425.index
@@ -273,7 +279,9 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3901151235.index
 2906790982.index
 2550858760.index
+3062544351.index
 2241429649.index
+2875105283.index
 3046232456.index
 3876943537.index
 3919147487.index
@@ -350,6 +358,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 3674124381.index
 3849899533.index
 1886478569.index
+2562341519.index
 35752512.index
 2171932009.index
 3208465988.index
@@ -389,6 +398,7 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 1574448086.index
 2970794161.index
 2068864376.index
+943408829.index
 3461233495.index
 1326323129.index
 130695293.index
@@ -530,5 +540,6 @@ INDEX VERSION 1.131+C:\Users\anton\git\fatec-2019-2s\ads-les\.metadata\.plugins\
 4068792330.index
 2636985847.index
 933785866.index
+2254491277.index
 1011326448.index
 66193152.index
