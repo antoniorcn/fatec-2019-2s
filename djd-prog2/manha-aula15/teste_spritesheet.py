@@ -16,8 +16,11 @@ class Heroi(pygame.sprite.Sprite):
         self.frame_index = 0
         self.gId = self.animacao[self.frame_index]
         self.rect = pygame.Rect((100, 100), (self.width, self.height))
+        self.vel_x = 0
+        self.vel_y = 0
 
     def update(self):
+        self.rect.move_ip(self.vel_x, self.vel_y)
         self.gId = self.animacao[self.frame_index]
         col = self.gId % self.colunas
         lin = self.gId // self.colunas
@@ -32,14 +35,26 @@ class Heroi(pygame.sprite.Sprite):
         for e in eventos:
             if e.type == pygame.KEYDOWN:
                 if e.key == pygame.K_RIGHT:
-                    self.rect.move_ip(2, 0)
-                if e.key == pygame.K_LEFT:
-                    self.rect.move_ip(-2, 0)
+                    self.vel_x = 1
+                elif e.key == pygame.K_LEFT:
+                    self.vel_x = -1
+                elif e.key == pygame.K_UP:
+                    self.vel_y = -1
+                elif e.key == pygame.K_DOWN:
+                    self.vel_y = 1
+            elif e.type == pygame.KEYUP:
+                if e.key in [pygame.K_RIGHT, pygame.K_LEFT]:
+                    self.vel_x = 0
+                elif e.key in [pygame.K_UP, pygame.K_DOWN]:
+                    self.vel_y = 0
 
 
 h1 = Heroi()
+h2 = Heroi()
+h2.rect.move_ip(200, 200)
 grp_herois = pygame.sprite.Group()
 grp_herois.add(h1)
+grp_herois.add(h2)
 
 while True:
     # calcular regras

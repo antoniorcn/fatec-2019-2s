@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="Aula-11 PROG2 Noite Parte 2">
-      <change afterPath="$PROJECT_DIR$/manha-aula15/EpicArmor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manha-aula15/teste_spritesheet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manha-aula15/teste_spritesheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/manha-aula15/teste_spritesheet.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +244,7 @@
       <workItem from="1573302251777" duration="11218000" />
       <workItem from="1573477105700" duration="7381000" />
       <workItem from="1573834686085" duration="594000" />
-      <workItem from="1574073315619" duration="6752000" />
+      <workItem from="1574073315619" duration="7930000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -306,7 +304,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$teste_oo_1.coverage" NAME="teste_oo_1 Coverage Results" MODIFIED="1571668057475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula11/pacman" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo_numeros.coverage" NAME="retangulo-numeros Coverage Results" MODIFIED="1569072807898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$testar_carro.coverage" NAME="testar_carro Coverage Results" MODIFIED="1571670609458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha_aula12" />
-    <SUITE FILE_PATH="coverage/djd_prog2$teste_spritesheet.coverage" NAME="teste_spritesheet Coverage Results" MODIFIED="1574083582792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula15" />
+    <SUITE FILE_PATH="coverage/djd_prog2$teste_spritesheet.coverage" NAME="teste_spritesheet Coverage Results" MODIFIED="1574085771808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula15" />
     <SUITE FILE_PATH="coverage/djd_prog2$lista_3.coverage" NAME="lista-3 Coverage Results" MODIFIED="1569252417423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$retangulo.coverage" NAME="retangulo Coverage Results" MODIFIED="1569246940211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_6.coverage" NAME="pacman-6 Coverage Results" MODIFIED="1572876119658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula13" />
