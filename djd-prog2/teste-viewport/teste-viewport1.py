@@ -81,16 +81,20 @@ class Cenario:
             for coluna, coluna_conteudo in enumerate(linha_conteudo):
                 x = (coluna * tamanho) + self.camera.offset_x
                 y = (linha * tamanho) + self.camera.offset_y
-                cor = PRETO
-                if coluna_conteudo == 2:
-                    cor = AZUL
-                r = pygame.Rect((x, y), (tamanho, tamanho))
-                pygame.draw.rect(tela, cor, r, 0)
-                if coluna_conteudo == 1:
-                    ponto_x = int(x + tamanho / 2)
-                    ponto_y = int(y + tamanho / 2)
-                    ponto_raio = int(tamanho / 10)
-                    pygame.draw.circle(tela, AMARELO, (ponto_x, ponto_y), ponto_raio, 0)
+                r = pygame.Rect(x, y, tamanho, tamanho)
+                if self.camera.in_viewport(r):
+                    cor = PRETO
+                    if coluna_conteudo == 2:
+                        cor = AZUL
+                    r = pygame.Rect((x, y), (tamanho, tamanho))
+                    pygame.draw.rect(tela, cor, r, 0)
+                    if coluna_conteudo == 1:
+                        ponto_x = int(x + tamanho / 2)
+                        ponto_y = int(y + tamanho / 2)
+                        ponto_raio = int(tamanho / 10)
+                        pygame.draw.circle(tela, AMARELO, (ponto_x, ponto_y), ponto_raio, 0)
+                else:
+                    print(linha, coluna)
 
 
 class Fantasma(pygame.sprite.Sprite):
