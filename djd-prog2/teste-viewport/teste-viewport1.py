@@ -21,9 +21,12 @@ tamanho = int(600 / 30) * 2
 font_big = pygame.font.SysFont("arial", 48, True, False)
 font_small = pygame.font.SysFont("arial", 18, True, False)
 
+
 class Camera:
     def __init__(self, tamanho):
         self.window = pygame.Rect((0, 0), (800, 600))
+        self.offset_x = 0
+        self.offset_y = 0
         self.w_blocks = 800 // tamanho
         self.h_blocks = 600 // tamanho
         self.map_window = pygame.Rect((0, 0), (self.w_blocks, self.h_blocks))
@@ -34,14 +37,11 @@ class Camera:
     def draw(self, tela, group):
         for s in group:
             if self.in_viewport(s.rect):
-                temp_screen = pygame.Surface(s.rect.bottomright, 0)
-                tela.blit(temp_screen, pos_dif)
-
-
+                tela.blit(s.image, (s.rect.x + self.offset_x, s.rect.y + self.offset_y))
 
 
 class Cenario:
-    def __init__(self, pac):
+    def __init__(self, camera):
         self.cenario = [
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
@@ -74,14 +74,13 @@ class Cenario:
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
         ]
         self.pontos = 0
-        self.pac = pac
-        self.fantasmas = []
+        self.camera = camera
 
-    def desenhar(self, tela, tamanho):
+    def desenhar(self, tela):
         for linha, linha_conteudo in enumerate(self.cenario):
             for coluna, coluna_conteudo in enumerate(linha_conteudo):
-                x = coluna * tamanho
-                y = linha * tamanho
+                x = (coluna * tamanho) + self.camera.offset_x
+                y = (linha * tamanho) + self.camera.offset_y
                 cor = PRETO
                 if coluna_conteudo == 2:
                     cor = AZUL
@@ -93,74 +92,12 @@ class Cenario:
                     ponto_raio = int(tamanho / 10)
                     pygame.draw.circle(tela, AMARELO, (ponto_x, ponto_y), ponto_raio, 0)
 
-    def aprovar_movimento(self, personagem):
-        aprovado = False
-        if 0 <= personagem.intencao_linha < len(self.cenario) \
-                and 0 <= personagem.intencao_coluna < len(self.cenario[0]) \
-                and self.cenario[personagem.intencao_linha][personagem.intencao_coluna] != 2:
-            personagem.linha = personagem.intencao_linha
-            personagem.coluna = personagem.intencao_coluna
-            aprovado = True
-        else:
-            personagem.intencao_linha = personagem.linha
-            personagem.intencao_coluna = personagem.coluna
-        return aprovado
 
-    def calcular_regras(self):
-        if self.aprovar_movimento(self.pac):
-            if self.cenario[self.pac.linha][self.pac.coluna] == 1:
-                self.pontos += 1
-                print(self.pontos)
-                self.cenario[self.pac.linha][self.pac.coluna] = 0
-        for fantasma in self.fantasmas:
-            self.aprovar_movimento(fantasma)
-            if self.pac.coluna == fantasma.coluna \
-                    and self.pac.linha == fantasma.linha:
-                self.pac.morrer()
-
-class Pacman:
-    def __init__(self):
-        self.linha = 17
-        self.coluna = 15
-        self.vidas = 3
-        self.intencao_linha = self.linha
-        self.intencao_coluna = self.coluna
-        self.abertura = 0
-        self.vel_abertura = VELOCIDADE_BOCA
-
-    def morrer(self):
-        self.vidas -= 1
-        self.coluna = 15
-        self.linha = 17
-        self.intencao_coluna = self.coluna
-        self.intencao_linha = self.linha
-        if self.vidas <= 0:
-            print("Game Over")
-
-    def desenhar(self, tela, tamanho):
-        raio = int(tamanho / 2)
-        corpo_x = self.coluna * tamanho + raio
-        corpo_y = self.linha * tamanho + raio
-        fundo_boca = (corpo_x, corpo_y)
-        labio_inferior = (corpo_x + raio, corpo_y + self.abertura)
-        labio_superior = (corpo_x + raio, corpo_y - self.abertura)
-        self.abertura = self.abertura + self.vel_abertura
-        if self.abertura > raio:
-            self.vel_abertura = - VELOCIDADE_BOCA
-        if self.abertura <= 0:
-            self.vel_abertura = VELOCIDADE_BOCA
-        olho_raio = int(raio / 10)
-        olho_x = corpo_x + int(raio / 6)
-        olho_y = corpo_y - int(2 * raio / 3)
-        pygame.draw.circle(tela, AMARELO, (corpo_x, corpo_y), raio, 0)
-        pontos_boca = [fundo_boca, labio_inferior, labio_superior]
-        pygame.draw.polygon(tela, PRETO, pontos_boca, 0)
-        pygame.draw.circle(tela, PRETO, (olho_x, olho_y), olho_raio, 0)
-
-
-class Fantasma:
+class Fantasma(pygame.sprite.Sprite):
     def __init__(self, image_file, linha=14, coluna=13):
+        pygame.sprite.Sprite.__init__(self)
         self.image = pygame.image.load(image_file).convert_alpha()
+        self.rect = pygame.Rect((0, 0), (tamanho, tamanho))
         self.coluna = coluna
         self.linha = linha
         self.intencao_linha = self.linha
@@ -192,37 +129,37 @@ class Fantasma:
                 self.escolher_direcao()
             self.ciclos = 0
 
-    def desenhar(self, tela, tamanho):
-        img = pygame.transform.scale(self.image, (tamanho, tamanho))
-        px = self.coluna * tamanho
-        py = self.linha * tamanho
-        tela.blit(img, (px, py))
-
 
 clyde = Fantasma("clyde.png")
 inky = Fantasma("inky.png")
 pinky = Fantasma("pinky.png")
 blinky = Fantasma("blinky.png")
-pacman = Pacman()
-cenario = Cenario(pacman)
-cenario.fantasmas.extend([clyde, inky, pinky, blinky])
+
+cam = Camera(tamanho)
+cenario = Cenario(cam)
+
+group = pygame.sprite.Group()
+group.add(clyde)
+group.add(inky)
+group.add(pinky)
+group.add(blinky)
 
 while True:
     # Calcular Regras
-    cenario.calcular_regras()
-    pinky.mover()
-    inky.mover()
-    blinky.mover()
-    clyde.mover()
+    #pinky.mover()
+    #inky.mover()
+    #blinky.mover()
+    #clyde.mover()
 
     # Desenha tela
     screen.fill(PRETO)
-    cenario.desenhar(screen, tamanho)
-    pacman.desenhar(screen, tamanho)
-    clyde.desenhar(screen, tamanho)
-    pinky.desenhar(screen, tamanho)
-    inky.desenhar(screen, tamanho)
-    blinky.desenhar(screen, tamanho)
+    cam.draw(screen, group)
+    cenario.desenhar(screen)
+    #pacman.desenhar(screen, tamanho)
+    #clyde.desenhar(screen, tamanho)
+    #pinky.desenhar(screen, tamanho)
+    #inky.desenhar(screen, tamanho)
+    #blinky.desenhar(screen, tamanho)
     pygame.display.update()
 
     # Captura eventos
@@ -231,10 +168,10 @@ while True:
             exit()
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_RIGHT:
-                pacman.intencao_coluna += 1
+                cam.offset_x -= 10
             if e.key == pygame.K_LEFT:
-                pacman.intencao_coluna -= 1
+                cam.offset_x += 10
             if e.key == pygame.K_UP:
-                pacman.intencao_linha -= 1
+                cam.offset_y -= 10
             if e.key == pygame.K_DOWN:
-                pacman.intencao_linha += 1
+                cam.offset_y += 10

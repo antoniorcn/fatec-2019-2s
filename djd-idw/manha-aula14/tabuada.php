@@ -10,9 +10,13 @@
           $n = $_REQUEST['NUMERO'];
         }
 
-        for($i = 0; $i <= 10; $i++) {
-          $res = $n * $i;
-          echo "<li>$n X $i = $res</li>";
+        if ($n >= 0 && $n <= 100) {
+          for($i = 0; $i <= 10; $i++) {
+            $res = $n * $i;
+            echo "<li>$n X $i = $res</li>";
+          }
+        } else {
+            echo "<h2>Numero invalido para a tabuada</h2>";
         }
 
       ?>

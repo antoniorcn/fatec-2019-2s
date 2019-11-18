@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <h1>Pet Shop</h1>
+    <form action="./pets.php" method="post">
+        <table>
+          <tr>
+            <td>
+              <label>Nome do Pet</label>
+            </td>
+            <td>
+              <input type="text" name="NOME"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Nascimento</label>
+            </td>
+            <td>
+              <input type="date" name="NASCIMENTO" pattern="yyyy-MM-dd"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Peso</label>
+            </td>
+            <td>
+              <input type="number" name="PESO" min="0.1" max="2000.0"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit">Adicionar</button>
+            </td>
+          </tr>
+        </table>
+    </form>
+  </body>
+</html>

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="Aula-11 PROG2 Noite Parte 2">
-      <change afterPath="$PROJECT_DIR$/teste-viewport/blinky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-viewport/clyde.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-viewport/inky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-viewport/pinky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +244,7 @@
       <workItem from="1573302251777" duration="11218000" />
       <workItem from="1573477105700" duration="7381000" />
       <workItem from="1573834686085" duration="594000" />
-      <workItem from="1574073315619" duration="1522000" />
+      <workItem from="1574073315619" duration="3282000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -297,7 +293,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Aula-11 PROG2 Noite Parte 2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/djd_prog2$teste_viewport1.coverage" NAME="teste-viewport1 Coverage Results" MODIFIED="1574073842784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teste-viewport" />
+    <SUITE FILE_PATH="coverage/djd_prog2$teste_viewport1.coverage" NAME="teste-viewport1 Coverage Results" MODIFIED="1574078158616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teste-viewport" />
     <SUITE FILE_PATH="coverage/djd_prog2$input_hiscore.coverage" NAME="input-hiscore Coverage Results" MODIFIED="1569079718527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_1__1_.coverage" NAME="pacman-1 (1) Coverage Results" MODIFIED="1571499563022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_sprites.coverage" NAME="pacman_sprites Coverage Results" MODIFIED="1573312904862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula12" />
