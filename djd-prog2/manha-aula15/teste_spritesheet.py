@@ -6,7 +6,7 @@ PRETO = (0, 0, 0)
 
 class Heroi(pygame.sprite.Sprite):
     def __init__(self):
-        self.estado = "CAMINHANDO_DIREITA"
+        self.estado = "PARADO_DIREITA"
         pygame.sprite.Sprite.__init__(self)
         self.spritesheet = pygame.image.load("EpicArmor.png").convert_alpha()
         self.width = 64
@@ -14,7 +14,14 @@ class Heroi(pygame.sprite.Sprite):
         self.colunas = 9
         self.animacoes = {
             "PARADO_DIREITA": [27],
-            "CAMINHANDO_DIREITA": [28, 29, 30, 31, 32, 33, 34]
+            "CAMINHANDO_DIREITA": [28, 29, 30, 31, 32, 33, 34],
+            "PARADO_ESQUERDA": [9],
+            "CAMINHANDO_ESQUERDA": [10, 11, 12, 13, 14, 15, 16, 17],
+            "PARADO_CIMA": [0],
+            "CAMINHANDO_CIMA": [1, 2, 3, 4, 5, 6, 7, 8],
+            "PARADO_BAIXO": [18],
+            "CAMINHANDO_BAIXO": [19, 20, 21, 22, 23, 24, 25, 26],
+            "VOLTINHA": [27, 18, 9, 0, 9, 18, 27]
         }
         self.image = pygame.Surface((self.width, self.height), 0)
         self.frame_index = 0
@@ -34,7 +41,6 @@ class Heroi(pygame.sprite.Sprite):
         lin = self.gId // self.colunas
         x = col * self.width
         y = lin * self.height
-
         self.image = self.spritesheet.subsurface(x, y, self.width, self.height)
 
     def processar_eventos(self, eventos):
@@ -45,16 +51,29 @@ class Heroi(pygame.sprite.Sprite):
                     self.estado = "CAMINHANDO_DIREITA"
                 elif e.key == pygame.K_LEFT:
                     self.vel_x = -1
+                    self.estado = "CAMINHANDO_ESQUERDA"
                 elif e.key == pygame.K_UP:
                     self.vel_y = -1
+                    self.estado = "CAMINHANDO_CIMA"
                 elif e.key == pygame.K_DOWN:
                     self.vel_y = 1
+                    self.estado = "CAMINHANDO_BAIXO"
+                elif e.key == pygame.K_SPACE:
+                    self.estado = "VOLTINHA"
             elif e.type == pygame.KEYUP:
                 if e.key == pygame.K_RIGHT:
                     self.vel_x = 0
                     self.estado = "PARADO_DIREITA"
-                elif e.key in [pygame.K_UP, pygame.K_DOWN]:
+                elif e.key == pygame.K_LEFT:
+                    self.vel_x = 0
+                    self.estado = "PARADO_ESQUERDA"
+                elif e.key == pygame.K_UP:
                     self.vel_y = 0
+                    self.estado = "PARADO_CIMA"
+                elif e.key == pygame.K_DOWN:
+                    self.vel_y = 0
+                    self.estado = "PARADO_BAIXO"
+
 
 
 h1 = Heroi()
@@ -73,7 +92,7 @@ while True:
     grp_herois.draw(tela)
     pygame.display.update()
 
-    pygame.time.delay(120)
+    pygame.time.delay(100)
 
     # capturar eventos
     eventos = pygame.event.get()
