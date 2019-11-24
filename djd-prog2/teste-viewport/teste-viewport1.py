@@ -21,6 +21,7 @@ tamanho = int(600 / 30) * 2
 font_big = pygame.font.SysFont("arial", 48, True, False)
 font_small = pygame.font.SysFont("arial", 18, True, False)
 
+VELOCIDADE_CAMERA = 5
 
 class Camera:
     def __init__(self, tamanho):
@@ -94,7 +95,7 @@ class Cenario:
                         ponto_raio = int(tamanho / 10)
                         pygame.draw.circle(tela, AMARELO, (ponto_x, ponto_y), ponto_raio, 0)
                 else:
-                    print(linha, coluna)
+                    pass #print(linha, coluna)
 
 
 class Fantasma(pygame.sprite.Sprite):
@@ -147,13 +148,16 @@ group.add(clyde)
 group.add(inky)
 group.add(pinky)
 group.add(blinky)
-
+velx = 0
+vely = 0
 while True:
     # Calcular Regras
     #pinky.mover()
     #inky.mover()
     #blinky.mover()
     #clyde.mover()
+    cam.offset_x += velx
+    cam.offset_y += vely
 
     # Desenha tela
     screen.fill(PRETO)
@@ -172,10 +176,10 @@ while True:
             exit()
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_RIGHT:
-                cam.offset_x -= 10
+                velx = -VELOCIDADE_CAMERA
             if e.key == pygame.K_LEFT:
-                cam.offset_x += 10
+                velx = VELOCIDADE_CAMERA
             if e.key == pygame.K_UP:
-                cam.offset_y -= 10
+                vely = VELOCIDADE_CAMERA
             if e.key == pygame.K_DOWN:
-                cam.offset_y += 10
+                vely = -VELOCIDADE_CAMERA

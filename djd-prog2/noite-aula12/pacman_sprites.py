@@ -248,17 +248,7 @@ while True:
     grupo_pac.draw(tela)
     pygame.display.update()
 
-    # pygame.time.delay(1000 // FPS)
-    # print(pygame.time.get_ticks())
-    # contador += 1
     clk.tick(FPS)
-    # segundos = pygame.time.get_ticks() / 1000
-    # if int(segundos) % 2 == 0:
-    #    print(int(segundos))
-    # if contador * FPS > 1000:
-    #    print("Passou 1 segundo")
-    #    contador = 0
-
 
     # Captura Eventos
     eventos = pygame.event.get()

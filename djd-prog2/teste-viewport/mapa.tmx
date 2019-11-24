@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="Desert Spacing.tsx"/>
+ <layer id="1" name="Camada de Tiles 1" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyTY2BgkKMylkRiS5GJpZHMUKSCm5SHgXkGUEwN8wzQMLIcIxAzIWFmAuahm4VuJhca5qbAPD0g5iTRPEL+Jcc8fPEhCMRCSFiYSPMGe/obNY848zSBWItCrE0FN9EDAwA5NS++
+  </data>
+ </layer>
+</map>

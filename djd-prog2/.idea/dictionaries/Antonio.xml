@@ -17,6 +17,7 @@
       <w>calor</w>
       <w>captura</w>
       <w>capturando</w>
+      <w>capturar</w>
       <w>caracteres</w>
       <w>carta</w>
       <w>castlevania</w>
@@ -27,6 +28,7 @@
       <w>colidiu</w>
       <w>colisao</w>
       <w>coluna</w>
+      <w>colunas</w>
       <w>comprar</w>
       <w>compre</w>
       <w>computador</w>
@@ -53,6 +55,7 @@
       <w>frio</w>
       <w>fundo</w>
       <w>ganhou</w>
+      <w>herois</w>
       <w>hoje</w>
       <w>houve</w>
       <w>identifica</w>
@@ -68,9 +71,11 @@
       <w>letra</w>
       <w>ligado</w>
       <w>linha</w>
+      <w>linhas</w>
       <w>maior</w>
       <w>mais</w>
       <w>maiusculo</w>
+      <w>mapa</w>
       <w>minha</w>
       <w>minúsculo</w>
       <w>momento</w>
@@ -112,8 +117,11 @@
       <w>tesoura</w>
       <w>teste</w>
       <w>texto</w>
+      <w>tmxdata</w>
       <w>usuario</w>
       <w>vamos</w>
+      <w>velx</w>
+      <w>vely</w>
       <w>venceu</w>
       <w>você</w>
     </words>
