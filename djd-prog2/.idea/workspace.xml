@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ccb8da-e7c8-4bb7-ba8c-e0fb8e1c7973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/galaga/galaga-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/galaga/galaga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula14/jornal 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula14/jornal em branco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula14/jornal.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manha-aula14/jornal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste-viewport/teste-viewport1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="djd-prog2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,8 +91,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.teste-viewport1">
-    <configuration name="pulo-sprite" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.galaga-1">
+    <configuration name="galaga-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="djd-prog2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,12 +100,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manha-aula14" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/galaga" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manha-aula14/pulo-sprite.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/galaga/galaga-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.galaga-1" />
         <item itemvalue="Python.teste-viewport1" />
         <item itemvalue="Python.teste_tiled" />
         <item itemvalue="Python.teste_spritesheet (1)" />
         <item itemvalue="Python.teste_spritesheet" />
-        <item itemvalue="Python.pulo-sprite" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +257,11 @@
       <workItem from="1574073315619" duration="13302000" />
       <workItem from="1574187815394" duration="604000" />
       <workItem from="1574194022861" duration="273000" />
-      <workItem from="1574511887314" duration="15611000" />
+      <workItem from="1574511887314" duration="15657000" />
+      <workItem from="1574603985630" duration="7680000" />
+      <workItem from="1574683683511" duration="10410000" />
+      <workItem from="1574776757062" duration="11000" />
+      <workItem from="1574879219217" duration="3740000" />
     </task>
     <task id="LOCAL-00001" summary="Aula-11 PROG2 Noite Parte 1">
       <created>1572100572660</created>
@@ -278,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574599263584</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aula-13 PROG2 Noite Parte Unica">
+      <created>1574600689886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574600689886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +345,7 @@
     <SUITE FILE_PATH="coverage/djd_prog2$pacman_3__2_.coverage" NAME="pacman-3 (2) Coverage Results" MODIFIED="1571672606522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha_aula12" />
     <SUITE FILE_PATH="coverage/djd_prog2$tabuada.coverage" NAME="tabuada Coverage Results" MODIFIED="1569244286125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula7" />
     <SUITE FILE_PATH="coverage/djd_prog2$listas_parte1.coverage" NAME="listas-parte1 Coverage Results" MODIFIED="1569078085384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/noite-aula7" />
+    <SUITE FILE_PATH="coverage/djd_prog2$galaga_1.coverage" NAME="galaga-1 Coverage Results" MODIFIED="1574738717836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/galaga" />
     <SUITE FILE_PATH="coverage/djd_prog2$circulos_com_som.coverage" NAME="circulos-com-som Coverage Results" MODIFIED="1569857570516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula9" />
     <SUITE FILE_PATH="coverage/djd_prog2$pong.coverage" NAME="pong Coverage Results" MODIFIED="1570458322982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula10" />
     <SUITE FILE_PATH="coverage/djd_prog2$explorar_string.coverage" NAME="explorar_string Coverage Results" MODIFIED="1567432448371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/manha-aula5" />
